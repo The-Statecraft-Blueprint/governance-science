@@ -96,7 +96,7 @@ A DIE would apply this same structure to governance architecture across all doma
 ## Related Terms
 
 **Directly Related:**
-- **Bounded Delegation** - The DIE is the flagship application of this pattern to governance design
+- [**Bounded Delegation**](../patterns/bounded_delegation.md) - The DIE is the flagship application of this pattern to governance design
 - **Governance Architecture** - What the DIE designs (the institutional rules and structures)
 - **Implementation Layer** - The DIE is part of this layer, translating democratic goals into operational systems
 - **Abstraction Separation** - The DIE embodies separation between "what to do" (legislature) and "how to do it" (DIE)
