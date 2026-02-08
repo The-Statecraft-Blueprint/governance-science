@@ -212,12 +212,12 @@ The key is **dynamic equilibrium**: enough insulation for professional judgment,
 ## Collaborations
 
 ### 1. Democratic Authority → Professional Body
-**Nature**: Authorization and goal-setting
+**Nature**: Authorization and goal-setting (collaborative and iterative)
 **Exchange**: 
 - Democratic authority provides: Mandate, goals, boundaries, resources, legitimacy
 - Professional body receives: Authority to act, clear objectives, scope definition
 
-**Key Interaction**: Initial delegation is explicit, documented, with clear boundary definition. Not implicit or assumed.
+**Key Interaction**: Initial delegation is explicit, documented, with clear boundary definition. Not implicit or assumed. In practice, this should be **collaborative and iterative** as the mandate and boundaries are being developed—not just "make up a goal and throw it over the wall." Professional body may need to explain what's technically feasible, what requires research, where boundaries should be drawn. Democratic authority may need multiple rounds to clarify goals. The final delegation should reflect genuine understanding on both sides.
 
 ### 2. Professional Body → Implementation
 **Nature**: Design and execution
@@ -278,7 +278,7 @@ The key is **dynamic equilibrium**: enough insulation for professional judgment,
 
 - **Requires trust in expertise**: Public and democratic authority must accept professional judgment
 - **Complexity added**: Meta-layer above normal political operations
-- **Democratic engagement may decrease**: Citizens may disengage from technical decisions
+- **Freedom to disengage (ambiguous)**: Citizens may disengage from technical decisions—this could be a cost (reduced oversight) or a benefit (freedom to focus on higher-level goals and their own domains, just as citizens don't need to be involved in every bridge being built because there are professional architects and inspectors)
 - **Resource intensive**: Professional bodies need funding, staffing, oversight
 - **Boundary disputes**: Fights over what's "professional" vs "political" decision
 - **Transparency paradox**: Professional deliberation needs some protected space, but accountability requires openness
@@ -817,8 +817,8 @@ Based on Federal Reserve, Supreme Court, NICE, and NZ Electoral Commission:
 - Boundary disputes will occur—need clear resolution process
 
 **References:**
-- Edwards, Jason (2026). "Governance Architecture Comprehensive Framework." Governance Science Repository.
-- Hensley, Jason (2025). Various essays, The Statecraft Blueprint.
+- Edwards, Jason (2026). "The Governance Design Agency: Separating Institutional Design from Political Operation." Draft paper for IOEA 2026 Conference.
+- Edwards, Jason (2025-2026). Various essays, *The Statecraft Blueprint*. https://statecraftblueprint.substack.com
 
 ---
 
