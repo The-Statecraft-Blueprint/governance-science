@@ -17,7 +17,7 @@ Ensure decision-makers experience the consequences of their decisions by designi
 
 Governance systems frequently exhibit a structural disconnect: those who make decisions don't bear the consequences. Legislators pass unfunded mandates, executives make commitments that bind successors, regulators face no personal cost for regulatory capture, and current majorities externalize costs to future generations.
 
-When this happens, the system loses its self-correcting capacity. Decision-makers receive no feedback signal indicating whether their decisions were good or bad. Multiple decision qualities produce the same outcome for the decision-maker. The system has high degeneracy in its accountability relationships.
+When this happens, the system loses its self-correcting capacity. Decision-makers receive no feedback signal indicating whether their decisions were good or bad. Multiple decision qualities produce the same outcome for the decision-maker. The system has high [degeneracy](../DSL/degeneracy.md) in its accountability relationships.
 
 The principle is simple: **good design routes costs back to the decision-maker.** This is not primarily a moral claim about fairness (though it may also be fair). It's an engineering observation about feedback loops. Systems where decision-makers bear costs are self-correcting. Systems where costs route elsewhere accumulate dysfunction.
 
@@ -113,8 +113,8 @@ The pattern works through a feedback cycle:
 The key structural question is **step 3: routing**. Without a mechanism routing consequences to the decision-maker, steps 4-6 don't happen. The decision-maker is flying blind, and the system cannot self-correct.
 
 Strong consequence alignment means:
-- Low degeneracy (different decision qualities produce distinguishable consequences for decision-maker)
-- High causal determinism (consequences reliably follow decisions)
+- Low [degeneracy](../DSL/degeneracy.md) (different decision qualities produce distinguishable consequences for decision-maker)
+- High [causal determinism](../DSL/causal_determinism.md) (consequences reliably follow decisions)
 - Short time lag (feedback arrives before next decision cycle)
 - Clear attribution (decision-maker can identify which decision caused which consequence)
 
@@ -560,19 +560,25 @@ Pre-2008 financial crisis, mortgage originators could sell loans immediately, be
 
 ### Patterns Often Used Together:
 
-- **Bounded Delegation**: Professional bodies need consequence alignment to maintain accountability while exercising delegated authority
+- **[Bounded Delegation](bounded_delegation.md)**: Professional bodies need consequence alignment to maintain accountability while exercising delegated authority
 - **Transparent Methodology**: Consequence alignment works better when decision-makers and affected parties can observe the routing mechanism
 - **Independent Oversight with Enforcement**: Oversight findings can feed into consequence mechanisms
 
 ### Alternative Patterns:
 
 - **Democratic Override**: Different approach to accountability—preserve ability to reverse decisions rather than create consequences for decision-makers. Complements rather than replaces consequence alignment.
-- **Transparency Mechanisms**: Alternative accountability approach relying on information rather than direct consequences. Works through reputational effects rather than structural routing.
+- **[Actionable Transparency](actionable_transparency.md)**: The information-side complement to consequence alignment — ensures the empowered party can access and act on disclosed information. Both are required for functional accountability.
 
 ### Conflicts With:
 
 - **Risk-Pooling Mechanisms**: Insurance and social safety nets deliberately weaken individual consequence alignment to enable collective risk-sharing
 - **Deliberative Insulation**: Some decisions benefit from protecting decision-makers from immediate consequences (judicial independence, long-term planning)
+
+### See Also (DSL Terms):
+- **[Degeneracy](../DSL/degeneracy.md)**: The structural property that consequence alignment is designed to reduce
+- **[Causal Determinism](../DSL/causal_determinism.md)**: Strong consequence alignment requires high causal determinism — consequences must reliably follow decisions
+- **[Cost Routing](../DSL/cost_routing.md)**: The mechanism by which consequences are directed back to decision-makers
+- **[Structural Drift](../DSL/structural_drift.md)**: A systemic consequence of weak consequence alignment — when decision-makers don't bear the costs of the tools they build, successors inherit and expand them
 
 ---
 
