@@ -2,8 +2,8 @@
 
 **Status**: Draft  
 **Category**: Foundational Concept  
-**Version**: 1.0  
-**Last Updated**: April 2026
+**Version**: 1.1  
+**Last Updated**: September 2026
 
 ---
 
@@ -149,6 +149,7 @@ Public choice theory (Buchanan, Tullock) identified similar dynamics without the
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | April 2026 | Initial definition | Jason Edwards |
+| 1.1 | September 2026 | Cross-reference added to Consent Degeneracy, a species of this term applied to the consent signal. No change to the definition. | Jason Edwards |
 
 ---
 

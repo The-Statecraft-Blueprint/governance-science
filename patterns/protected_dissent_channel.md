@@ -2,7 +2,7 @@
 
 **Status**: Draft  
 **Pattern Category**: Accountability Mechanism  
-**Version**: 1.0  
+**Version**: 1.1  
 **Last Updated**: September 2026
 
 ---
@@ -10,6 +10,8 @@
 ## Intent
 
 Preserve the information content of a body's consent by structurally lowering the price of registering objection within it, so that agreement and compliance stop producing the same observable.
+
+**Scope limit, stated up front:** a consent signal is voided independently by a high price on dissent *and* by a rich reward for endorsement (see **Consent Degeneracy**). This pattern addresses only the first. A body that has driven its dissent price to zero while rewarding endorsement richly will still have a degenerate consent signal, and nothing here detects or repairs that.
 
 ---
 
@@ -23,11 +25,13 @@ The stakes are not primarily about fairness to the dissenter, which is why this 
 
 **It cannot forecast itself.** A body sustained by compliance has no way to observe how thin its support actually is. This is why arrangements of this kind look stable for long periods and then fail very quickly—the reversal surprises the leadership as much as anyone, because the leadership was reading the same falsified instrument as everyone else.
 
-**It cannot learn.** Objection is how an organization discovers that its model of the world is wrong. Where objection is expensive, the information does not stop existing—it stops arriving. The Columbia loss is the canonical documented case: the Accident Investigation Board found organizational barriers that "stifled professional differences of opinion," and management, receiving no registered objection, proceeded as though there were none.
+**It cannot learn.** Objection is how an organization discovers that its model of the world is wrong. Where objection is expensive, the information does not stop existing—it stops arriving. The Columbia loss is the most fully documented case, and it is a compound one: the Accident Investigation Board found organizational barriers that "stifled professional differences of opinion," and it also documented objections that *were* registered—imagery requests, one of which reached the Department of Defense before being cancelled. Expensive objection and inert objection are different failures, both were present, and the pattern here addresses only the first.
 
 **Its own defenders become unusable as evidence.** An institution facing the charge that it serves narrow interests will naturally point to the people who endorse it. Where the price of dissent is high, that endorsement answers nothing, and the institution has forfeited the ability to substantiate its own claim about itself.
 
-The problem recurs across contexts because the instruments that create the price are the ordinary instruments of organizational life. Assignments, funding, promotion, licensure, access, and membership are not pathologies; they are how institutions operate. Any body that controls goods its members need has, by that fact alone, a dissent price to manage, and will have one whether or not anyone intended to set it.
+The problem recurs across contexts because the instruments that create the price are the ordinary instruments of organizational life. Assignments, funding, promotion, licensure, access, and membership are not pathologies; they are how institutions operate. A body that controls goods its members need has, by that fact alone, the *capacity* to price dissent, whether or not anyone intended to set a price.
+
+That capacity is universal, which means its presence diagnoses nothing. What distinguishes the cases this pattern addresses is whether the capacity is used, how much it charges relative to what the participant can substitute, and how fast it can be delivered. An assertion that a body has a dissent price is therefore not a finding; a measured claim about magnitude, substitutability, and latency is. This distinction is what keeps the analysis from applying trivially to every institution that exists.
 
 ---
 
@@ -110,7 +114,7 @@ The problem recurs across contexts because the instruments that create the price
 - Purpose: Reduce the collectible penalty for having objected
 - *Route A, unattributability*: the identity of the dissenter cannot be recovered by the party holding the instruments—anonymity, de-identification, secret ballot, or a legal prohibition on inquiring into identity
 - *Route B, insulation*: the identity is known and the instruments are removed—tenure, non-renewable terms, statutory salary, or enforceable anti-retaliation with a real record of enforcement
-- Characteristics: These are alternatives, not complements, and each purchases the other's weakness. Choosing between them is the pattern's central design decision.
+- Characteristics: Each purchases the other's weakness, and the choice of which is *primary* is the pattern's central design decision. They are not, however, mutually exclusive, and the strongest cases in the set combine them: ASRS pairs de-identification with a limited waiver of sanction, and Sweden pairs its prohibition on inquiry with an enforceable prohibition on reprisal. The reason to name a primary route is that the two make different demands—anonymity requires a custodian who can be trusted with identity, insulation requires a legal instrument that removes leverage—and a design that gestures at both without committing to either usually builds neither.
 
 **4. Published Dissent Rate**
 - Purpose: Make the absence of dissent visible as a datum rather than as silence
@@ -200,10 +204,10 @@ A rate that falls to zero, or that originates only from participants who are lea
 ### Benefits (✅)
 
 - The body's agreement becomes readable, which restores the evidentiary value of every measure built on it
-- Objections arrive early, when they are cheap to act on, rather than in the accident report
 - The institution gains the ability to substantiate its own legitimacy claim rather than merely assert it
-- The dissent rate becomes a maintained instrument—a leading indicator of the price, available continuously rather than only after a failure
-- The design does not require anyone to be brave, which is the property that makes it architecture rather than exhortation
+- The dissent rate becomes a maintained instrument—a continuous measure of the price, rather than an inference drawn after a failure
+- The design reduces how much individual courage the channel requires, which is the property that makes it architecture rather than exhortation. It does not eliminate the requirement: the FOMC case suggests that a residue of norm-based cost persists after the formal instruments are removed.
+- *Claimed but not demonstrated*: that objections consequently arrive earlier and decisions improve. This is the pattern's motivating hypothesis and the evidence base does not yet establish it — see Limitations of Evidence.
 
 ### Costs (⚠️)
 
@@ -240,10 +244,11 @@ A rate that falls to zero, or that originates only from participants who are lea
 - Determine attributability and latency: can a refusal be assigned to an individual, by whom, how fast
 - Success criteria: a written inventory in which every entry names an instrument, a holder, and a delivery time
 
-**2. Choose the route, explicitly**
+**2. Choose the primary route, explicitly**
 - Route A (unattributability) where the objecting population is large, the objections are factual rather than deliberative, and the dissenter's identity adds little to the objection's weight
 - Route B (insulation) where the objection needs an author to be persuasive, where the dissenter must be answerable for it, or where the body's deliberation is itself the product
-- Success criteria: the choice is documented with its rationale, and the discarded route's advantages are stated rather than ignored
+- Adding the second route as a secondary layer is normal and generally strengthens the design; what fails is treating them as interchangeable and building half of each
+- Success criteria: the primary route is documented with its rationale, and the secondary layer's role is specified rather than assumed
 
 **3. Establish the custodian**
 - Separate the funding line and the appointment process from the body being objected to
@@ -273,7 +278,7 @@ A rate that falls to zero, or that originates only from participants who are lea
 
 **Variation C: Funded opposition**
 - Used at the level of a whole polity: the role of principal dissenter is constituted as a salaried office with staff and procedural entitlements
-- Drives the price below zero for the office-holder, though not for individual members of the body
+- Converts the leading dissenting role from an unfunded burden into a resourced office, though the ordinary political costs of holding it remain and the effect does not extend to individual members of the body
 - Trade-off: institutionalizes dissent as a role, which can make dissent from *outside* that role harder rather than easier—the objection is expected to travel through the recognized opposition or not at all
 
 **Variation D: Prohibition on inquiry**
@@ -310,13 +315,21 @@ NASA ASRS, "The Case for Confidential Incident Reporting Systems" (ASRS Pub. 60)
 FOMC policy decisions are taken by recorded vote, and dissents are published with the policy statement and in the minutes, attributed by name.
 
 **Pattern Application:**
-Route B with attribution retained. The channel is the recorded vote itself (Component 1); the record is published rather than held by the Chair (Components 1 and 4). Insulation comes from appointment structure: Governors serve long, staggered terms, and Reserve Bank presidents are not appointed by the Committee's chair. The published series is unusually complete, which makes this the clearest available instance of Component 4.
+A *partial* Route B case, and the partiality is the most useful thing about it. The channel is the recorded vote itself, published rather than held by the Chair (Components 1 and 4), and the series is unusually complete, which makes this the clearest available instance of Component 4.
+
+Component 3 is where it is only half-built, and this entry previously overstated it. Governors serve fourteen-year non-renewable terms and are genuinely insulated. Reserve Bank presidents are not: they serve renewable five-year terms, and reappointment requires the approval of the Board of Governors—which the Committee's Chair chairs. The reappointment lever that Germany's 1971 reform removed is present here, and it is held by a body the dissenter may be dissenting from.
 
 **Outcomes:**
 Over 1957–2013, dissents were 6% of votes cast on policy directives—449 dissents—with wide variation by period: zero in 2000 and 2004, 28 in 1963, and elevated rates in 1962–65 and 1978–80. Between 2008 and 2013 dissents averaged nearly one per meeting.
 
+The distribution is more interesting than the rate, and it cuts against the insulation story rather than for it: Reserve Bank presidents—the members with reappointment exposure—accounted for the overwhelming majority of dissents in recent decades, 72 of 76 between 1994 and 2013, while the insulated Governors dissented rarely.
+
 **Lessons Learned:**
-The value is not that the rate is high; it is that the rate exists, varies, and can be read. A body that publishes a dissent series makes its own consent signal auditable over time, and the variation is itself informative about periods of genuine disagreement. The honest limitation is that a norm of consensus is widely argued to suppress FOMC dissent below what members privately hold—a low price is not the same as no price, and this case shows the residue that norms leave after instruments are removed.
+Two, and the second was missed in this entry's first draft.
+
+The value of the arrangement is not that the rate is high; it is that the rate exists, varies, and can be read. A body that publishes a dissent series makes its own consent signal auditable over time.
+
+But the composition of that dissent is a caution against reading appointment security as the whole of Component 3. If insulation were the dominant variable, dissent should concentrate among the fourteen-year Governors; it concentrates instead among the five-year presidents. Plausible explanations run in several directions—presidents represent districts with distinct regional readings, proximity to the Chair and to the institution's consensus norms may weigh more heavily on Governors than reappointment risk does on presidents, and the Governors' dissents may be suppressed by a cost this pattern does not model. The case should be read as evidence that removing a formal instrument does not settle the price, not as a demonstration that the pattern works.
 
 **References:**
 Federal Reserve Bank of St. Louis, "A History of FOMC Dissents" (September 2014) and the accompanying dissent dataset.
@@ -351,10 +364,12 @@ As Erskine May records, "In 1937, statutory recognition was accorded through the
 Variation C, at the level of a whole polity. The channel is the recognised opposition and its procedural entitlements—opposition day debates, precedence in questioning, motions of no confidence (Component 1). The custodian is the House's own procedure rather than the government (Component 2). Price suppression is by public funding of the role: leading the opposition is a paid office rather than a personal financial sacrifice (Component 3).
 
 **Outcomes:**
-Opposition has been a continuously funded, procedurally entitled office for close to ninety years, and the arrangement has survived every alternation of government since—including alternations that placed the funding decision in the hands of the party that had been paying.
+Opposition has been a continuously funded, procedurally entitled office for close to ninety years, and the arrangement has survived every alternation of government since—each of which handed the party that had been receiving the funding the power to set it for their opponents, without the arrangement being dismantled.
 
 **Lessons Learned:**
-The pattern can be applied to the role of dissent rather than to individual dissenters, and doing so is far cheaper than protecting every member. The limitation follows directly: this configuration lowers the price for the office and not for a backbencher dissenting from their own party's whip, which is a different and generally much higher price. Constituting an official dissenter does not protect unofficial ones, and may raise the expectation that objection travels through the recognised channel or not at all.
+The pattern can be applied to the role of dissent rather than to individual dissenters, and doing so is far cheaper than protecting every member.
+
+Three limitations, and they are substantial enough that this is the weakest of the five cases against the pattern's own components. Component 2 is not satisfied: a government with a Commons majority controls the House's procedure and the level of Short Money, so the custodian is not outside the chain of consequence. The price suppression is partial rather than transformative—the Leader of the Opposition was a salaried Member before 1937, so the reform improved the terms of the office rather than rescuing it from personal sacrifice. And the configuration lowers the price for the *office* and not for a backbencher dissenting from their own party's whip, which is a different and generally much higher price. Constituting an official dissenter does not protect unofficial ones, and may raise the expectation that objection travels through the recognised channel or not at all.
 
 **References:**
 Erskine May, "The Official Opposition"; Ministers of the Crown Act 1937 (c 38), s 5; Ministerial and other Salaries Act 1975 (c 27).
@@ -364,16 +379,18 @@ Erskine May, "The Official Opposition"; Ministers of the Crown Act 1937 (c 38), 
 ### Known Use 5: Prohibition on Inquiry into Sources (Sweden)
 
 **Context:**
-The Freedom of the Press Act (1949:105) grants a right of anonymity to a person who has communicated information for publication (Ch. 3, Art. 1) and provides that "a public authority or other public body may not inquire into the identity of… a person who has communicated information" (Ch. 3, Art. 5). Deliberate breach is punishable by "a fine or imprisonment for up to one year" (Ch. 3, Art. 7).
+The Freedom of the Press Act (1949:105) grants a right of anonymity to a person who has communicated information for publication (Ch. 3, Art. 1), prohibits a public body from intervening against a person for having exercised press freedom (Ch. 3, Art. 6), and provides that "a public authority or other public body may not inquire into the identity of… a person who has communicated information" (Ch. 3, Art. 5). Deliberate breach of either prohibition is punishable by "a fine or imprisonment for up to one year" (Ch. 3, Art. 7).
 
 **Pattern Application:**
-Variation D. The distinctive move is at Component 3: rather than enumerating forbidden retaliations and requiring the dissenter to prove motive afterwards, the law removes the instrument-holder's ability to acquire the information on which selective retaliation depends—and criminalises the attempt.
+Variation D layered over a conventional reprisal prohibition—Sweden does both, and the layering is the point. Art. 6 is the familiar instrument, and it carries the familiar weakness: it requires the dissenter to establish afterwards why an adverse decision was taken. Art. 5 adds what Art. 6 cannot supply, by removing the instrument-holder's ability to acquire the information on which selective retaliation depends and criminalising the attempt to acquire it. The distinctive move at Component 3 is the addition, not a substitution.
 
 **Outcomes:**
 The provisions are constitutional-level and long-standing, and are consistently identified in comparative assessments as among the strongest source-protection regimes in Europe. The mechanism's strength is structural: the violation is an act (the inquiry) rather than a state of mind (the motive), and acts are provable in a way that motives are not.
 
 **Lessons Learned:**
-Where retaliation can be delivered through facially neutral instruments, forbidding retaliation is close to unenforceable and forbidding the inquiry is enforceable. This is the single most transferable design idea in the set, and it applies well beyond the press: internal review, peer assessment, and reporting systems can all be built so that the party with the instruments is barred from learning who objected.
+Where retaliation can be delivered through facially neutral instruments, forbidding retaliation is weakly enforceable and forbidding the inquiry is strongly enforceable, because the violation is an act rather than a state of mind. This is the single most transferable design idea in the set, and it applies well beyond the press: internal review, peer assessment, and reporting systems can all be built so that the party with the instruments is barred from learning who objected.
+
+Two boundaries on the transfer. The provisions bind public authorities and public bodies, not private employers, so this is not a description of Swedish employment generally. And they protect communication *for publication*, not internal objection—the design idea generalises, the provision itself does not.
 
 **References:**
 Sweden, *The Freedom of the Press Act* (1949:105), Ch. 3, Arts. 1, 5, 7, official English translation, Sveriges Riksdag; European Commission, *2020 Rule of Law Report* — input from Sweden.
@@ -404,7 +421,7 @@ Sweden, *The Freedom of the Press Act* (1949:105), Ch. 3, Arts. 1, 5, 7, officia
 4. Columbia Accident Investigation Board (2003), *Report Vol. I* — organizational barriers that "stifled professional differences of opinion" as a proximate organizational cause of a catastrophic loss, and an independent Technical Engineering Authority as the recommended structural remedy.
 
 ### Comparative Analysis:
-The five known uses span three domains (aviation safety, monetary policy, constitutional adjudication), five countries, and both routes. The most useful comparison in the set is Germany's constitutional court against the CJEU: similar institutional function, opposite choices on published dissent, and consequently one body whose internal consent signal is measurable and one whose is not.
+The five known uses span five domains (aviation safety, monetary policy, constitutional adjudication, parliamentary opposition, press-source protection), four countries (United States ×2, Germany, United Kingdom, Sweden), and both routes. The most useful comparison in the set is Germany's constitutional court against the CJEU: similar institutional function, opposite choices on published dissent, and consequently one body whose internal consent signal is measurable and one whose is not.
 
 ### Evaluation Data:
 The FOMC series is the only case with a long published dissent rate suitable for quantitative use (449 dissents, 6% of policy votes, 1957–2013). ASRS supplies volume data (>558,000 reports by 2002) but no counterfactual. The German case now supports quantitative work through a full historical database of separate opinions.
@@ -483,7 +500,9 @@ Insist on Component 4 plus Collaboration 5 together: publish the dissent rate *a
 ## Discussion and Open Questions
 
 - **The unmeasured natural experiment.** Germany's 1971 reform introduced published dissent and non-renewable terms simultaneously. It should be possible to study what happened to the Court's decision-making across that boundary, and separating the two changes may not be possible. Has anyone done it?
-- **Which route, on what criterion?** The choice between unattributability and insulation is stated here as a design decision, but the pattern offers a heuristic rather than a rule. Some principled basis—perhaps in whether the objection's weight depends on its author—would strengthen it considerably.
+- **Which route, on what criterion?** The choice of primary route is stated here as a design decision, but the pattern offers a heuristic rather than a rule. Some principled basis—perhaps in whether the objection's weight depends on its author—would strengthen it considerably.
+- **What is the FOMC composition telling us?** Dissent concentrates among the members with reappointment exposure rather than among the insulated ones, which is the opposite of what Component 3 predicts. Either the pattern is missing a variable, or formal insulation is a much smaller part of the price than the Germany case suggests. This is the sharpest anomaly in the evidence base and it is unresolved.
+- **The endorsement-reward half.** The Intent's scope limit names a voider this pattern does not address and no term in the library covers. What would the corresponding pattern look like?
 - **Does protection deplete?** The FOMC case suggests that removing instruments leaves a residue of norm-based cost that continues to suppress dissent. How large is that residue, how long does it persist, and can it be designed against at all?
 - **The zero-rate problem.** A protected channel with no traffic and an unprotected channel with no traffic look identical from outside. Component 4 addresses this partially, by establishing a baseline. Is there a stronger test?
 - **Scope of the dependency.** All five known uses protect against *career* price. None addresses the case Jason Edwards raises in the term's development: dissent priced in community and family membership, where the institution controls goods no employment protection reaches. Whether this pattern extends to that class of dependency, or whether that class requires a different pattern, is open.
@@ -512,13 +531,15 @@ Insist on Component 4 plus Collaboration 5 together: publish the dissent rate *a
 
 7. Sweden. *The Freedom of the Press Act* (1949:105), Ch. 3, Arts. 1, 5, 7. Official English translation, Sveriges Riksdag. https://www.riksdagen.se/globalassets/05.-sa-fungerar-riksdagen/demokrati/the-freedom-of-the-press-act-2023-eng.pdf
 
-8. Columbia Accident Investigation Board (2003). *Report, Volume I*. NASA.
+8. Columbia Accident Investigation Board (2003). *Report, Volume I*. NASA. Recommendation R7.5-1 (independent Technical Engineering Authority); Ch. 7 on organizational causes.
 
-9. Kuran, Timur (1995). *Private Truths, Public Lies: The Social Consequences of Preference Falsification*. Harvard University Press.
+9. Board of Governors of the Federal Reserve System. "What is the process for reappointing Reserve Bank presidents?" — on the five-year renewable terms and Board approval requirement cited in Known Use 2.
 
-10. Kuran, Timur (1991). "Now Out of Never: The Element of Surprise in the East European Revolution of 1989." *World Politics*, 44(1): 7-48.
+10. Kuran, Timur (1995). *Private Truths, Public Lies: The Social Consequences of Preference Falsification*. Harvard University Press.
 
-11. Hirschman, Albert O. (1970). *Exit, Voice, and Loyalty*. Harvard University Press.
+11. Kuran, Timur (1991). "Now Out of Never: The Element of Surprise in the East European Revolution of 1989." *World Politics*, 44(1): 7-48.
+
+12. Hirschman, Albert O. (1970). *Exit, Voice, and Loyalty*. Harvard University Press.
 
 ---
 
@@ -527,6 +548,7 @@ Insist on Component 4 plus Collaboration 5 together: publish the dissent rate *a
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | September 2026 | Initial pattern documentation | Jason Edwards |
+| 1.1 | September 2026 | Reclassified the FOMC as a partial Route B case and reported the dissent-composition finding that runs against it; added Freedom of the Press Act Art. 6 and the public/private and publication-scope limits to Known Use 5; corrected the UK entry (inverted sentence, Component 2 failure, pre-1937 baseline); routes A and B stated as primary/secondary rather than mutually exclusive; corrected the domain and country counts; separated demonstrated benefits from the motivating hypothesis; added the endorsement-reward scope limit | Jason Edwards |
 
 ---
 

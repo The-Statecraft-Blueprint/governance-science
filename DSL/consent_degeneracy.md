@@ -2,7 +2,7 @@
 
 **Status**: Draft  
 **Category**: Systemic Property  
-**Version**: 1.0  
+**Version**: 1.1  
 **Last Updated**: September 2026
 
 ---
@@ -17,7 +17,19 @@ The condition in which a governance mechanism cannot distinguish genuine agreeme
 
 This is a species of **degeneracy**, applied to the consent signal. The parent term names the general failure: many different causes producing one indistinguishable effect, so the system cannot recover the cause from the effect. Here the causes are the possible internal states of a participant—genuine agreement, indifference, private opposition—and the effect is a single observable: the yes vote, the signature, the public endorsement, the silence at the meeting where objections were invited.
 
-The formalization is a likelihood ratio, and it is worth stating precisely because it is what makes the term survive a hostile reading. An observed endorsement is informative about an underlying preference to the degree that P(endorse | actually supports) exceeds P(endorse | does not support). As the dissent price rises, both probabilities converge on 1, and the ratio collapses toward 1. At the limit the observation no longer discriminates between the two underlying states—which is the parent definition exactly, not an analogy to it. That is why this earns the term "degeneracy" rather than borrowing it.
+The formalization is a likelihood ratio, and stating it precisely matters because the loose version invites an easy rebuttal.
+
+The measure is the ratio
+
+> Λ = P(endorse | actually supports) ÷ P(endorse | does not support)
+
+An observed endorsement discriminates between the two underlying states to the degree that Λ departs from 1. As the price of dissent rises, both probabilities are driven toward 1 and Λ degrades toward 1 with them. Three points about this that the loose version gets wrong:
+
+- **It is a matter of degree, not a threshold.** Λ reaches exactly 1 only where refusal is impossible, and real systems sit short of that. "Carries no information" is the limit case; the working claim is that the endorsement's discriminating power falls as the price rises, and can fall far enough that decisions resting on it are not supportable.
+- **The endorsement channel and the dissent channel move in opposite directions.** The same price rise that degrades Λ for endorsement sharpens it for refusal: a dissent registered at high cost is very strong evidence about the dissenter's state. This is why a body under a high price is read by its defections rather than its majorities, and it is not in tension with the above—one channel is being degraded and the other concentrated, on the same variable.
+- **What lowering the price buys is narrower than it looks.** Driving the price to zero removes an engineered distortion; it does not manufacture a credible signal, because a costless message's informativeness then depends on preference alignment between speaker and listener rather than on cost at all (Crawford and Sobel, 1982). Cheap dissent restores the conditions under which endorsement *could* be informative. See the limits below.
+
+**On the parent term.** The claim that this is a species of `degeneracy` rather than a borrowing of the word rests on the general information-theoretic form given in `foundations/causal_emergence_foundations.md`—"given an effect, how many different causes could have produced it?"—rather than on the accountability gloss in `degeneracy.md`, whose mapping runs decision → consequence-for-the-decision-maker. On the general form the fit is exact: multiple causes (internal preference states), one effect (the observable endorsement), and no recovery of the cause from the effect. On the accountability gloss it is not, because there is no decision-maker bearing a consequence here. The inheritance is from the parent's formal definition, and the accountability reading is a sibling application rather than a parent of this one.
 
 Two conditions void the signal independently, and both must be low for endorsement to be admissible:
 
@@ -25,6 +37,8 @@ Two conditions void the signal independently, and both must be low for endorseme
 - **A rich endorsement reward** makes agreement profitable, so it is produced whether or not it is held. Bought praise.
 
 These are different mechanisms with the same informational result, and a system can be clean on one while failing on the other. A paid product review is uninformative even where criticism is entirely free.
+
+The second voider is at present the weaker half of this library's coverage, and that should be stated rather than left to be discovered. **Dissent Pricing** names the first; no term names the second, and the **Protected Dissent Channel** pattern addresses only the price. A body that has driven its dissent price to zero and rewards endorsement richly still has a degenerate consent signal, and nothing in the current vocabulary would flag it.
 
 Two limits keep the term from overreaching, and both should be stated whenever it is used.
 
@@ -46,19 +60,23 @@ A 95% unity score is therefore two radically different diagnoses wearing the sam
 
 The separation requires a price shock. Members whose dissent price has fallen—genuine retirements, final terms—should diverge from the party line if unity is enforcement-based and should not if it is preference-based.
 
+That design is not clean, and the confound is named in the sibling term rather than hidden: departure lowers the *electoral* price while frequently leaving the *career* price intact, because a large share of departing legislators move into lobbying and consulting where party goodwill remains the operative asset. A null result is therefore consistent with both hypotheses, and an undifferentiated retirement design cannot return "this majority is genuine." The design only discriminates if treatment is graded by residual leverage—genuine exit versus revolving-door departure versus primary defeat—so that the comparison is between departing members who still need the party and departing members who do not. Absent that grading, an assertion of consent degeneracy in this setting is not falsifiable by this test, and should not be presented as though it were.
+
 **Example 2: Organizational Silence at NASA (Columbia, 2003)**
 
 The Columbia Accident Investigation Board found that the loss was rooted in organizational as well as technical causes, identifying "organizational barriers that prevented effective communication of critical safety information and stifled professional differences of opinion."
 
-The structural reading is precise: an engineer's silence and an engineer's concurrence produced the same observable for management, so management could not tell them apart, and read the absence of registered objection as agreement that the foam strike was not a safety-of-flight issue. The signal was degenerate, and the decision was made on it.
+This case has to be characterized carefully, because it is a mixed one and is frequently over-read—including in earlier drafts of this entry. The Debris Assessment Team was *not* uniformly silent: it made imagery requests, one of which reached the Department of Defense before being cancelled by NASA. That component is a **dissent efficacy** failure—an objection was registered and did not reach or move the decision point—and efficacy is a distinct problem this term does not name.
 
-The Board's principal structural remedy is instructive because it targets the price rather than the culture: an independent Technical Engineering Authority, funded from headquarters, with no connection to schedule or program cost pressure—that is, a recipient of technical objection who does not control the objector's program.
+The consent-degeneracy component is the surrounding one. Concerns that were not converted into a formal request produced no observable distinguishable from concurrence, and management's reading of the situation as settled was formed against a background in which the absence of a registered objection and the presence of agreement looked identical. The two failures compound: a channel expensive enough that most concern never enters it, and a channel whose formal entries can be closed without disposition, together produce a decision record that reports far more agreement than existed.
+
+The Board's structural remedies include one that targets the price directly: an independent Technical Engineering Authority, funded from NASA Headquarters, with no connection to schedule or program cost—that is, a recipient of technical objection who does not control the objector's program. It is one of twenty-nine recommendations, not the principal one.
 
 **Example 3: The Inversion Region—Unanimity as Evidence of Suppression**
 
 Past a threshold, the relationship inverts. When observed agreement exceeds what the underlying process could plausibly generate, the agreement becomes evidence about the process rather than about the question. A referendum returning 99% is not strong evidence of 99% support; it is strong evidence that the measurement was not free.
 
-The oldest formal statement of this is a rule of Jewish law: where every judge of a Sanhedrin votes to convict in a capital case, the defendant is released. Maimonides states it directly—"When all the judges of a Sanhedrin begin their judgment of a case involving capital punishment and say that the defendant is liable, he is exonerated"—on the reasoning that a valid conviction requires some judges to have argued the other side. Total agreement is treated as a defect in the proceeding, not as certainty about the accused.
+An old formal statement of this is a rule of Jewish law. Maimonides: "When all the judges of a Sanhedrin begin their judgment of a case involving capital punishment and say that the defendant is liable, he is exonerated," on the reasoning that a valid conviction requires some judges to have argued for acquittal. Note the qualifier, which is easily dropped and changes the rule: it concerns unanimity at the *opening* of deliberation rather than the final verdict. Even so narrowed, the structure is the one at issue—total agreement before argument has occurred is treated as a defect in the proceeding rather than as certainty about the accused.
 
 This is an inference about measurement, not a moral judgment, and it is the most useful region of the curve precisely because it needs no access to anyone's private beliefs.
 
@@ -120,7 +138,7 @@ Applying the term where the dissent price is visibly low and disagreement is vis
 ## Measurement
 
 **Indicators:**
-- **The plausibility ceiling**: does observed agreement exceed what a free process could produce for this population and question? Sustained near-unanimity, approval figures without variance, and referendum margins above roughly 95% are the classic signatures.
+- **The plausibility ceiling**: does observed agreement exceed what a free process could produce *for this population and this question*? The qualifier is doing all the work and cannot be dropped: free processes routinely return near-unanimity on uncontested questions, so a high margin is a signature only where the question is known to be contested. What is diagnostic is a high margin that is *insensitive to the difficulty of the question*—the same figure returned on hard and easy items alike.
 - **The attributed–anonymous gap**: the difference between responses given under attribution and responses to the same question given anonymously. List experiments and randomized response techniques are designed for exactly this and give a direct estimate of falsification.
 - **Dissent under price shocks**: whether defection rises among participants whose price has fallen (announced retirees, final terms, tenured members, post-appointment judges), graded by residual leverage rather than treated as binary.
 - **Whether dissent is recorded at all**, and whether recorded dissenters subsequently advance at the same rate as non-dissenters. A published dissent rate makes the absence of dissent visible as a datum rather than as silence.
@@ -144,7 +162,7 @@ Applying the term where the dissent price is visibly low and disagreement is vis
 
 The empirical core belongs to Timur Kuran, whose work on preference falsification analyses the gap between privately held and publicly expressed preference under social cost, and whose account of the Eastern European revolutions of 1989 explains why systems sustained by falsified endorsement appear stable until they are not: no one, including the regime, can observe how thin the support has become, so the reversal is a surprise to everyone at once.
 
-The formal core is older and comes from signaling theory, where a message that costs nothing to send carries no information about the sender's type. The governance application inverts the usual reading of a legislature: under a high dissent price, agreement is cheap talk and defection is the only informative signal, so a body is read by its defections rather than by its majorities. One member breaking ranks under a high-price regime says more than four hundred voting together.
+The formal core comes from signaling theory, though the slogan usually attached to it is wrong: it is not that a costless message carries no information—cheap talk is informative where interests are sufficiently aligned (Crawford and Sobel, 1982)—but that an asymmetric price across the available messages drives the observation toward the cheap one. The governance application inverts the usual reading of a legislature: where refusal is expensive and assent is free, assent is the uninformative channel and defection is the concentrated one, so a body is read by its defections rather than by its majorities. One member breaking ranks under a high-price regime says more than four hundred voting together.
 
 The inversion region has the longest pedigree of all, appearing in Jewish law as a rule invalidating unanimous capital convictions—a formal recognition, in a legal system, that the absence of dissent is evidence about the proceeding rather than about the defendant.
 
@@ -170,11 +188,13 @@ What is new here is not any of these pieces but their unification into a named f
 
 5. Maimonides, *Mishneh Torah*, Hilkhot Sanhedrin 9:1 (translation via Chabad.org). See also Babylonian Talmud, Sanhedrin 17a. Cited here as an illustrative historical formulation; the Maimonides passage is verified against the cited translation, the Talmudic locus is given on the standard attribution and has not been independently checked against the primary text in this pass.
 
-6. Warner, Stanley L. (1965). "Randomized Response: A Survey Technique for Eliminating Evasive Answer Bias." *Journal of the American Statistical Association*, 60(309): 63-69.
+6. Crawford, Vincent P., and Joel Sobel (1982). "Strategic Information Transmission." *Econometrica*, 50(6): 1431-1451.
 
-7. Jost, John T., and Mahzarin R. Banaji (1994). "The Role of Stereotyping in System-Justification and the Production of False Consciousness." *British Journal of Social Psychology*, 33(1): 1-27.
+7. Warner, Stanley L. (1965). "Randomized Response: A Survey Technique for Eliminating Evasive Answer Bias." *Journal of the American Statistical Association*, 60(309): 63-69.
 
-8. Elster, Jon (1983). *Sour Grapes: Studies in the Subversion of Rationality*. Cambridge University Press. On adaptive preferences.
+8. Jost, John T., and Mahzarin R. Banaji (1994). "The Role of Stereotyping in System-Justification and the Production of False Consciousness." *British Journal of Social Psychology*, 33(1): 1-27.
+
+9. Elster, Jon (1983). *Sour Grapes: Studies in the Subversion of Rationality*. Cambridge University Press. On adaptive preferences.
 
 ---
 
@@ -183,6 +203,7 @@ What is new here is not any of these pieces but their unification into a named f
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | September 2026 | Initial definition | Jason Edwards |
+| 1.1 | September 2026 | Stated the likelihood ratio as a ratio and as a matter of degree rather than a threshold; argued the parent-term inheritance from the general information-theoretic form rather than asserting it; corrected the Columbia example, which is partly an efficacy failure; restored the "begin their judgment" qualifier to the Maimonides rule; named the retiree design's confound and the uncovered endorsement-reward voider | Jason Edwards |
 
 ---
 

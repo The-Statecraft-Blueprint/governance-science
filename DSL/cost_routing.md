@@ -2,8 +2,8 @@
 
 **Status**: Draft  
 **Category**: Foundational Concept  
-**Version**: 1.0  
-**Last Updated**: April 2026
+**Version**: 1.1  
+**Last Updated**: September 2026
 
 ---
 
@@ -173,6 +173,7 @@ The synthesis into "cost routing" as a governance architecture term emphasizes t
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | April 2026 | Initial definition | Jason Edwards |
+| 1.1 | September 2026 | Cross-reference added to Dissent Pricing, the complementary property. No change to the definition. | Jason Edwards |
 
 ---
 

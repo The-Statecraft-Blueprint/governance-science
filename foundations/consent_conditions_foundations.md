@@ -2,7 +2,7 @@
 
 **Status**: Draft  
 **Document Type**: Theoretical Foundation  
-**Version**: 1.0  
+**Version**: 1.1  
 **Last Updated**: September 2026
 
 ---
@@ -33,7 +33,9 @@ But this only relocates the difficulty. Granting that systems can be evaluated, 
 
 ## 2. Why the Usual Escape Routes Do Not Work
 
-**Appeal to the participants' endorsement.** The natural move is to let the people inside a system say whether it serves them. It fails on a loop the framework's own thesis predicts: if systems shape behavior, and preferences are behavior, then a system that produces its own defenders is not presenting independent evidence. When senior members defend the seniority system, that is not evidence that seniority is good; it is evidence that the system selects for and rewards people who defend it. The endorsement is partly an output of the thing being evaluated.
+**Appeal to the participants' endorsement.** The natural move is to let the people inside a system say whether it serves them. It runs into a loop: where a system controls the goods its participants depend on, and rewards or penalizes them according to what they say about it, the endorsement it collects is partly an output of the thing being evaluated. When senior members defend the seniority system, that is weak evidence that seniority is good and strong evidence that the system selects for and rewards people who defend it.
+
+The objection has to be stated in that conditional form. Stated generally—systems shape behavior, preferences are behavior, therefore no endorsement from inside any system is independent evidence—it defeats all testimony everywhere, including the analyst's own, and an argument that proves that much has proved nothing. What the criterion below addresses is the specific, mechanically produced version: endorsement collected under a price the collector sets. It does not address, and does not claim to address, the general problem that people's preferences are formed by their circumstances. See Limit 2 in Section 7, which concedes precisely this and leaves it open.
 
 **Appeal to the participants' true interests.** The move that usually follows—the endorsers are mistaken about what is good for them—is worse. It is condescending, unfalsifiable in practice, and frequently wrong. It also cannot be operated by anyone who does not already hold the standard being defended, which returns the problem unchanged.
 
@@ -65,7 +67,7 @@ The instinct behind the claim is sound. The formulation gives away the property 
 
 ## 4. The Version That Survives
 
-The bridge is already in the vocabulary: **evaluability**—the property that makes a designed system a checkable object, because it can be tested against a stated objective. Evaluability is conditional, and the condition usually is not met.
+The bridge is a property this project names **evaluability**—that a designed system is a checkable object, because it can be tested against a stated objective. (The term is currently defined in the companion Governance Design Agency vocabulary rather than in this repository's DSL; promoting it here, so that this note does not depend on a document outside the public library, is an outstanding task.) Evaluability is conditional, and the condition usually is not met.
 
 Restated through it:
 
@@ -83,15 +85,21 @@ And it does not require a new normative commitment, because it slots under a ter
 
 The precise version is a likelihood ratio, and it is worth carrying because it is what makes the criterion survive a technical reading.
 
-An observed endorsement is informative about an underlying preference to the degree that
+> Λ = P(endorse | actually supports) ÷ P(endorse | does not support)
 
-> P(endorse | actually supports) > P(endorse | does not support)
+An observed endorsement discriminates between the two underlying states to the degree that Λ departs from 1. As the price of dissent rises, both probabilities are driven toward 1 and Λ degrades toward 1 with them.
 
-As the price of dissent rises, both probabilities converge on 1 and the ratio collapses toward 1. At the limit, the observation no longer discriminates between the two underlying states.
+Three qualifications, each of which the loose version of this argument gets wrong:
 
-That is not an analogy to **degeneracy**. It is the existing DSL definition—different causes producing an identical effect, so the cause cannot be recovered from the effect—instantiated on the consent signal. This is why **Consent Degeneracy** is properly a species of `degeneracy` rather than a new family borrowing its name, and it is why the term inherits the parent's scaffolding, including the parent's insistence that some degeneracy is deliberate and correct.
+**It is a matter of degree.** Λ equals 1 only where refusal is impossible. The working claim is that discriminating power falls as the price rises, and can fall far enough that decisions resting on the observation are not supportable—not that a threshold is crossed at which the signal becomes literally empty.
 
-A second voider operates independently and must be stated alongside the first: a rich **reward for endorsement** destroys the signal just as thoroughly as a high price on dissent. Coerced praise and bought praise are uninformative for different reasons and by different mechanisms. Both must be low for an endorsement to be admissible.
+**The two channels move in opposite directions.** The same price rise that degrades Λ for endorsement concentrates it for refusal. Under a high price, assent is the uninformative channel and defection is the strong one, which is why such a body is read by its defections rather than by its majorities. This is not in tension with the above; it is the same fact seen from the other message.
+
+**Lowering the price buys less than it appears to.** Driving the price toward zero removes an engineered distortion. It does not manufacture a credible signal, because the informativeness of a costless message then turns on preference alignment between speaker and listener rather than on cost (Crawford and Sobel, 1982). The common slogan—a costless message is cheap talk and therefore carries no information—is false as stated, and if it were true it would defeat this programme rather than support it, since at zero price both messages are costless. What actually destroys discrimination is *asymmetry* in the price across the available messages. That is the property dissent pricing names, and it is why the design target is the differential between what yes costs and what no costs.
+
+On the relation to the parent term: the claim that **Consent Degeneracy** is a species of `degeneracy` rather than a borrowing rests on the general information-theoretic form—given an effect, how many causes could have produced it—rather than on the accountability reading in `DSL/degeneracy.md`, whose mapping runs decision → consequence-for-the-decision-maker and does not fit. The inheritance is from the formal definition. The entry itself makes this argument at length.
+
+A second voider operates independently and must be stated alongside the first: a rich **reward for endorsement** destroys the signal just as thoroughly as a high price on dissent. Coerced praise and bought praise are uninformative for different reasons and by different mechanisms. Both must be low for an endorsement to be admissible—and at present only the first has a term and a pattern in this library.
 
 ---
 
@@ -103,7 +111,9 @@ Nearly every modern governance system claims consent-based legitimacy. This is n
 
 Having made it, they have supplied the standard. The criterion asks only whether the evidence they offer for their own central claim is capable of supporting it. That requires the analyst to hold no position on what the good society looks like, and it does not depend on the analyst and the system sharing any values at all.
 
-The honest limit: a system that grounds its authority somewhere other than consent—divine mandate, inheritance, conquest, or an explicitly asserted claim to know better—is outside this criterion's reach. It is not being evaluated against its own claim, because it did not make this one. That case must be argued on other grounds. In practice it is rare, and its rarity is the point.
+The honest limit, and it is larger than it first appears: a body that grounds its authority somewhere other than consent—divine mandate, inheritance, ownership, professional expertise, or an explicitly asserted claim to know better—is outside this criterion's reach. It is not being evaluated against its own claim, because it did not make this one.
+
+Among *states* the exclusion is now narrow, which is what gives the criterion its reach in governance. But the terms this note supports are not restricted to states, and among the other bodies that price dissent the exclusion is wide rather than rare. A religious community, a family, a firm, a professional association: these price dissent heavily and most of them make no consent-legitimacy claim of the kind this argument turns on. The religious-exit case that motivates the **Dissent Pricing** entry is in the excluded class. For those bodies the terms remain useful as *measurement*—the consent signal is degenerate or it is not, and that is a fact about the signal either way—but the internal-critique move in this section is unavailable, and evaluating them requires standards from somewhere else. This is a real boundary and should not be papered over by counting states only.
 
 ---
 
@@ -117,7 +127,9 @@ Four limits, all of which should be stated whenever the criterion is used, becau
 
 **3. Silent on outcomes.** The criterion evaluates a system's capacity to read itself. It says nothing about whether what the system does is worth doing. Those are separable questions and both are required.
 
-**4. A floor, not a ranking.** It rules systems out; it does not order the ones that remain. Two systems that both price dissent near zero are not thereby comparable on this measure, and the interesting evaluative work in most real cases begins above this floor rather than at it.
+**4. A floor, not a ranking—and not yet an operational one.** It rules systems out; it does not order the ones that remain. Two systems that both price dissent near zero are not thereby comparable on this measure, and the interesting evaluative work in most real cases begins above this floor rather than at it.
+
+The stronger caveat: applying a floor requires a scalar and a threshold, and dissent price is a distribution across participants rather than a scalar (see **Dissent Pricing**). No summary of that distribution has been justified here—mean, median, or the price faced by the most dependent participant would give different answers, and the choice among them is itself a value judgment. Until that is settled, the criterion identifies a direction and supports case-by-case argument; it does not yet rule any system out by computation. Anyone using it as though it did is claiming more than the apparatus delivers.
 
 Underneath all four sits a further honesty: somewhere at the bottom there is a normative commitment that cannot be derived from facts, and anyone claiming otherwise is smuggling one in. Here that commitment is thin—roughly, that a system's own account of why it is entitled to govern should be checkable. It is far thinner than the relativism worry suggests, and nearly every argument in institutional design happens well above it.
 
@@ -125,13 +137,17 @@ Underneath all four sits a further honesty: somewhere at the bottom there is a n
 
 ## 8. A Related Correction: Selection, Not Difficulty
 
-A neighboring reformulation is worth recording here because it is often reached at the same moment and is also not quite right.
+A neighboring reformulation is worth recording here, with a warning attached, because it is usually reached at the same moment and it is *not* a version of the criterion above.
 
-Faced with the awkwardness of "ethical system," the natural repair is *a system that makes it easy for humans to be ethical*. Better, but *easy* is not the operative variable. Conduct in the public interest can be entirely easy and still fail to persist—if the person who engages in it is primaried, eased out, or passed over, the difficulty was never the constraint.
+Faced with the awkwardness of "ethical system," the natural repair is *a system that makes it easy for humans to be ethical*. Better, but *easy* is not the operative variable. Conduct of any given kind can be entirely easy and still fail to persist—if the person who engages in it is primaried, eased out, or passed over, difficulty was never the constraint.
 
-Systems are not difficulty dials. They are selection machines: whoever the system rewards is who accumulates in it. The sharper criterion is **survivability**—does a participant who acts in the public interest remain in the system and advance within it? This is also why replacing every member of a body changes little. The material passing through the filter is swapped; the filter is untouched.
+The correction is descriptive and holds regardless of anyone's values: **systems are not difficulty dials, they are selection machines.** Whoever the system rewards is who accumulates in it. This is why replacing every member of a body changes little—the material passing through the filter is swapped and the filter is untouched—and it is the observation the whole structural programme rests on.
 
-Dissent pricing is a special case of exactly this. A sustained price on dissent does not primarily change what participants do. It changes which participants remain.
+**Survivability** is the design question that follows: does a participant who does X remain in the system and advance within it? Note carefully what this is. It is a *schema* with a blank in it, and the blank has to be filled from outside. "Does someone who acts in the public interest survive here?" is a perfectly good question and it is not a procedural one—"the public interest" is exactly the contested, imported standard that Sections 1 through 4 established the consent criterion does not require. Anyone who fills the blank has taken on the burden of defending what they put there.
+
+So survivability is not a sharper version of the criterion in Section 4. It is a different instrument with a different cost: more powerful, because it evaluates what a system produces rather than only whether the system is readable, and correspondingly not available to an analyst who wants to hold no position. Both are worth having. Conflating them, or presenting survivability as the procedural criterion's stronger form, throws away the property that made the procedural version worth reaching for.
+
+Dissent pricing is a special case of the *selection* observation, which is the descriptive half: a sustained price on dissent does not primarily change what participants do, it changes which participants remain. It is not a special case of survivability-with-the-blank-filled, and nothing in Sections 3 through 7 depends on filling it.
 
 ---
 
@@ -204,13 +220,15 @@ Two cautions for anyone applying this in public-facing work.
 
 7. Hoel, Erik (2017). "When the Map Is Better Than the Territory." *Entropy*, 19(5): 188.
 
-8. "The Nuremberg Code" (1947), Principle 1, from the judgment in *United States v. Karl Brandt et al.* United States Holocaust Memorial Museum, Holocaust Encyclopedia.
+8. Crawford, Vincent P., and Joel Sobel (1982). "Strategic Information Transmission." *Econometrica*, 50(6): 1431-1451.
 
-9. Elster, Jon (1983). *Sour Grapes: Studies in the Subversion of Rationality*. Cambridge University Press.
+9. "The Nuremberg Code" (1947), Principle 1, from the judgment in *United States v. Karl Brandt et al.* United States Holocaust Memorial Museum, Holocaust Encyclopedia.
 
-10. Jost, John T., and Mahzarin R. Banaji (1994). "The Role of Stereotyping in System-Justification and the Production of False Consciousness." *British Journal of Social Psychology*, 33(1): 1-27.
+10. Elster, Jon (1983). *Sour Grapes: Studies in the Subversion of Rationality*. Cambridge University Press.
 
-11. Hurwicz, Leonid (2008). "But Who Will Guard the Guardians?" *American Economic Review*, 98(3): 577-585.
+11. Jost, John T., and Mahzarin R. Banaji (1994). "The Role of Stereotyping in System-Justification and the Production of False Consciousness." *British Journal of Social Psychology*, 33(1): 1-27.
+
+12. Hurwicz, Leonid (2008). "But Who Will Guard the Guardians?" *American Economic Review*, 98(3): 577-585.
 
 ---
 
@@ -219,6 +237,7 @@ Two cautions for anyone applying this in public-facing work.
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | September 2026 | Initial development | Jason Edwards |
+| 1.1 | September 2026 | Rewrote §8: survivability is a schema requiring an imported standard, not a sharper form of the procedural criterion — the first draft smuggled "the public interest" back in, which is the exact failure this note exists to prevent. Restated §5's likelihood ratio as a ratio and as a matter of degree, and corrected the cheap-talk claim. Narrowed §2's endogeneity argument, which as written defeated all testimony. Widened §6's excluded class, which is not rare and contains the terms' own motivating case. Marked the §7 floor as not yet operational | Jason Edwards |
 
 ---
 

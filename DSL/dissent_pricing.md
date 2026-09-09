@@ -2,7 +2,7 @@
 
 **Status**: Draft  
 **Category**: Foundational Concept  
-**Version**: 1.0  
+**Version**: 1.1  
 **Last Updated**: September 2026
 
 ---
@@ -21,13 +21,13 @@ The act matters more than its frequency suggests, because refusal is the act tha
 
 Three properties make dissent pricing usable as a design term rather than a description of political culture.
 
-**The price is a property of the relationship, not of the system alone.** Two participants under identical rules face different prices, because price exists only through goods the institution controls that the participant needs and cannot source elsewhere. A person who leaves a religious community they were raised in may lose their family, their friendships, their professional network, and their support structure—or nothing at all, if the institution held no leverage over those things in their case. The rules were the same in both cases; the dependency was not. Strictly, then, "the dissent price in Congress" is shorthand for a distribution across members, and the useful analytic object is a member's **dependency profile**: which of their future goods are controlled by the party they would be dissenting from. This is not a defect in the term. It is what makes the term measurable, and it is why a member's willingness to defect should be predictable from their dependencies rather than from their ideology.
+**The price is a property of the relationship, not of the system alone.** Two participants under identical rules face different prices, because price exists only through goods the institution controls that the participant needs and cannot source elsewhere. A person who leaves a religious community they were raised in may lose their family, their friendships, their professional network, and their support structure—or nothing at all, if the institution held no leverage over those things in their case. The rules were the same in both cases; the dependency was not. Strictly, then, "the dissent price in Congress" is shorthand for a distribution across members, and the useful analytic object is a member's **dependency profile**: which of their future goods are controlled by the party they would be dissenting from. This has a consequence that should be stated rather than glossed: because the price is a distribution and no summary statistic for it has been justified, phrases like "a high dissent price" applied to a whole body—used throughout this library and its companion terms—are informal shorthand, and any threshold claim built on them is not yet operational. This is not a defect in the term. It is what makes the term measurable, and it is why a member's willingness to defect should be predictable from their dependencies rather than from their ideology.
 
 **A price must be collectible to be a price.** A severe penalty that cannot be assigned to a particular person is not a price; it is a threat with no delivery mechanism. Attribution is therefore not a separate concern but the multiplier on every other component: it converts a potential penalty into a deliverable one, and it determines how fast delivery can occur. This is why reforms that alter attribution—recorded versus unrecorded votes, named versus anonymous review, identified versus de-identified reporting—move the dissent price without changing a single rule about what may be done to a dissenter.
 
 **Only mechanism-imposed price is a design variable.** In a genuinely cohesive group, dissent is costly *because* everyone agrees; the isolation is real but no one is charging it. That cost is endogenous to the consensus and cannot be reset by design. Instrument-imposed cost is different: someone holds a lever—committee assignments, campaign funds, a license, a promotion, a seat—and can choose to pull it. The distinction is easy to state and easy to lose in practice, and any analysis built on dissent pricing will be challenged on exactly this point. The discipline that keeps the term honest is to **name the instrument and name who holds it**. If neither can be named, the analysis may be describing conviction cost rather than architecture.
 
-A final distinction that the term is frequently asked to carry and should not: price is not efficacy. A system can charge nothing for objection and route every objection to a dead end. Comment periods that change no rule, suggestion boxes that are never opened, and advisory bodies without a decision point all price dissent at approximately zero and produce nothing. That is a different failure—the objection is admissible and simply has no path to consequence—and it belongs to **Actionable Transparency** and **Consequence Alignment**. Keeping the two apart matters because "we permit criticism" is the standard defense against a dissent-pricing critique, and it answers a question that was not asked.
+A final distinction that the term is frequently asked to carry and should not: price is not efficacy. A system can charge nothing for objection and route every objection to a dead end. Comment periods that change no rule, suggestion boxes that are never opened, and advisory bodies without a decision point all price dissent at approximately zero and produce nothing. That is a different failure—the objection is admissible and simply has no path to consequence—and it is **not currently covered by any term or pattern in this library**. **Actionable Transparency** is adjacent but answers a different question (whether a disclosure empowers the party it was meant to empower), and **Consequence Alignment** concerns routing the consequences of a decision back to the decision-maker rather than routing an objection to a decision point. Naming dissent efficacy properly is an open gap. Keeping it apart from price matters in the meantime, because "we permit criticism" is the standard defense against a dissent-pricing critique and it answers a question that was not asked.
 
 ---
 
@@ -43,13 +43,15 @@ Attribution is what makes the price collectible. Individual votes on procedural,
 
 Spain's PSOE has applied internal fines to deputies who break party voting discipline, with documented cases at €600—most notably against fifteen deputies who voted against the party's official abstention position in the 2016 Rajoy investiture. This is the unusual case in which the dissent price is literally denominated in currency, which makes it a useful reference point: the instrument is the party's internal disciplinary regulation, the holder is the party organization, and the amount is published.
 
-The instructive part is that this explicit, quantified price coexists with a legislature that has not experienced the sustained erosion seen in single-party-hegemony cases. A visible price is not the same as a decisive one, and the size of a penalty tells you less than what else the participant depends on.
+The instructive part is that an explicit, quantified, publicly reported price does not by itself indicate a captured legislature—Spain's is not one on any standard measure—which is a caution against reading price magnitude off the most visible instrument. A denominated fine is a small fraction of what a Spanish deputy depends on their party for, most of it running through closed-list candidate selection. The size of the named penalty tells you much less than the dependency profile does.
 
 **Example 3: Deliberate Price Suppression—Sweden's Prohibition on Inquiry**
 
-Sweden's Freedom of the Press Act establishes a right for informants to remain anonymous (Ch. 3, Art. 1) and then does something structurally distinctive: it forbids public authorities from *inquiring* into the identity of a person who has communicated information for publication (Ch. 3, Art. 5), with deliberate breach punishable by fine or up to one year's imprisonment (Ch. 3, Art. 7).
+Sweden's Freedom of the Press Act establishes a right for informants to remain anonymous (Ch. 3, Art. 1), prohibits public bodies from intervening against a person for having exercised press freedom (Ch. 3, Art. 6), and then adds a provision that is structurally distinctive: it forbids public authorities from *inquiring* into the identity of a person who has communicated information for publication (Ch. 3, Art. 5). Deliberate breach of either prohibition is punishable by fine or up to one year's imprisonment (Ch. 3, Art. 7).
 
-Most anti-retaliation regimes forbid the punishment and require the dissenter to prove motive afterward. Sweden's provision instead attacks collectability at the source: an employer who may not lawfully find out who spoke cannot selectively punish them, whatever instruments they otherwise hold. This is the design difference between lowering a price and removing the means of charging it.
+The instructive part is that Sweden does both, and the second does work the first cannot. A prohibition on reprisal requires the dissenter to establish afterwards why an adverse decision was taken, which is a claim about motive and is very hard to carry. A prohibition on inquiry makes the violation an *act*, which is provable, and it attacks collectability at the source: an authority that may not lawfully find out who spoke cannot selectively punish them, whatever instruments it otherwise holds. This is the design difference between forbidding the charge and removing the means of charging it.
+
+Two limits on the example. The provisions bind public authorities and public bodies, not private employers, so the arrangement is a design idea to transfer rather than a general description of Swedish employment. And the prohibition protects communication *for publication*; it is not a general internal-dissent protection.
 
 ---
 
@@ -82,7 +84,7 @@ Most anti-retaliation regimes forbid the punishment and require the dissenter to
 - **Actionable Transparency** - Attribution is the channel through which a dissent price is collected; the same disclosure that empowers a constituency can supply a leadership with a punishment list
 
 **Contrasts With:**
-- **Dissent efficacy** - Whether an objection reaches a decision point. Price and efficacy are independent: a system can charge nothing and deliver nothing.
+- **Dissent efficacy** (not yet a documented term) - Whether an objection reaches a decision point. Price and efficacy are independent: a system can charge nothing and deliver nothing. See the note under Related Terms below on the gap this leaves.
 - **Legal permission** - Formal protection of speech is one component of the price and frequently a small one; a system can guarantee the right absolutely and still charge heavily through other instruments
 
 **Builds On:**
@@ -138,7 +140,7 @@ Reading every unpopular position's difficulty as evidence of pricing. In a genui
 
 ## Historical Notes
 
-The components of this concept are long established and each is locked inside a single domain. Contract law voids consent obtained under duress. The Nuremberg Code's first principle requires that a research subject "be able to exercise free power of choice, without the intervention of any element of force, fraud, deceit, duress, over-reaching, or other ulterior form of constraint or coercion." International election observation asks whether opposition parties could campaign without intimidation. Hirschman's *Exit, Voice, and Loyalty* (1970) analyses the cost of voice and the cost of exit as the two variables governing whether a member of a declining organization speaks or leaves. Kuran's work on preference falsification treats the social cost of expressing a private preference as the driver of publicly falsified support. Signaling theory supplies the reason it all matters: a costless message is cheap talk and carries no information.
+The components of this concept are long established and each is locked inside a single domain. Contract law voids consent obtained under duress. The Nuremberg Code's first principle requires that a research subject "be able to exercise free power of choice, without the intervention of any element of force, fraud, deceit, duress, over-reaching, or other ulterior form of constraint or coercion." International election observation asks whether opposition parties could campaign without intimidation. Hirschman's *Exit, Voice, and Loyalty* (1970) analyses the cost of voice and the cost of exit as the two variables governing whether a member of a declining organization speaks or leaves. Kuran's work on preference falsification treats the social cost of expressing a private preference as the driver of publicly falsified support. Signaling theory supplies the general form, but it has to be stated more carefully than it usually is. The claim is *not* that a costless message is uninformative—cheap talk can carry information wherever the interests of speaker and listener are sufficiently aligned (Crawford and Sobel, 1982). The claim is that an *asymmetric* price across the available messages drives the observation toward the cheap one regardless of what is held. Dissent pricing names that asymmetry, which is why the design target is the differential between what yes costs and what no costs, not the absolute cost of speaking.
 
 Each of these is the same underlying property, and none of them generalizes it into an instrument that can be pointed at an institution and used to grade its architecture. Naming it as a design property—something an architect sets, rather than a cultural fact an analyst observes—is the contribution here, and the term's status should be understood accordingly: the underlying components are documented elsewhere; the unification is formalized here and awaits independent validation.
 
@@ -164,6 +166,8 @@ Each of these is the same underlying property, and none of them generalizes it i
 
 6. Hoel, Erik (2017). "When the Map Is Better Than the Territory." *Entropy*, 19(5): 188.
 
+7. Crawford, Vincent P., and Joel Sobel (1982). "Strategic Information Transmission." *Econometrica*, 50(6): 1431-1451.
+
 ---
 
 ## Revision History
@@ -171,6 +175,7 @@ Each of these is the same underlying property, and none of them generalizes it i
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | September 2026 | Initial definition | Jason Edwards |
+| 1.1 | September 2026 | Corrected the signaling-theory claim (cheap talk is not uninformative per se; the operative property is price asymmetry across messages); added Freedom of the Press Act Art. 6 and the public/private limit to Example 3; flagged dissent efficacy as an uncovered gap rather than deferring it to existing patterns; stated the distribution/aggregation problem explicitly | Jason Edwards |
 
 ---
 
