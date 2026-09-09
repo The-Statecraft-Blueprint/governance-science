@@ -69,6 +69,7 @@ When regulatory independence exists, good-faith decisions produce rules aligned 
 ## Related Terms
 
 **Directly Related:**
+- **Consent Degeneracy** - A species of this term applied to the consent signal; genuine agreement and enforced compliance produce an identical observable, so the system cannot read its own support
 - **Causal Determinism** - Complementary concept; determinism concerns reliability of individual cause→effect pathways
 - **Cost Routing** - Design principle for reducing degeneracy in accountability relationships
 - **Wrong-Pocket Problem** - Specific structural cause of degeneracy where costs and benefits accrue to different actors

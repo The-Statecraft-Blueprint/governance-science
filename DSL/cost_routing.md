@@ -87,6 +87,7 @@ A licensing regime with no enforcement, no liability, and no reputation effects 
 ## Related Terms
 
 **Directly Related:**
+- **Dissent Pricing** - The complement; cost routing describes where the consequences of a decision land, dissent pricing describes what the architecture charges for refusing one
 - **Degeneracy** - Weak cost routing creates high degeneracy; multiple decision qualities produce same consequence for decision-maker
 - **Causal Determinism** - Strong cost routing with high determinism means decisions reliably and distinguishably produce consequences
 - **Wrong-Pocket Problem** - Specific structural failure where costs accrue to different actor/jurisdiction/time than benefits

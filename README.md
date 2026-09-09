@@ -58,7 +58,7 @@ Formal definitions of governance architecture terms with:
 - Trade-off acknowledgments
 - Cross-references
 
-**Current**: 10 core terms  
+**Current**: 11 core terms  
 **Target**: 50-100 terms
 
 ### [Design Pattern Library](patterns/)
@@ -69,7 +69,7 @@ Documented approaches to recurring governance challenges with:
 - Trade-offs and failure modes
 - Implementation guidance
 
-**Current**: 1 pattern (Bounded Delegation)  
+**Current**: 5 patterns  
 **Target**: 10-15 core patterns
 
 ### [Reference Implementations](reference-implementations/)
