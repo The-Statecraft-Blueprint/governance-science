@@ -182,6 +182,16 @@ That profession doesn't exist yet. This repository builds the infrastructure tha
 
 ---
 
+## Website
+
+**[gov.science](https://gov.science)** is the public landing page for this project, served by GitHub Pages from the [`docs/`](docs/) folder on `main`.
+
+- `docs/index.html` is the whole page: one self-contained HTML file, no build step.
+- `docs/CNAME` holds the custom domain. `docs/.nojekyll` tells Pages to serve the files as-is.
+- Anything merged to `main` under `docs/` is live within a minute or two. Pushing *is* publishing.
+
+---
+
 ## Contact
 
 For questions about the project, contribution process, or academic collaboration:
