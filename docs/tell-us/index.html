@@ -29,7 +29,7 @@
     <div class="wrap">
       <h1 class="ask-h">We'd like to hear from you.</h1>
       <p>We've learned more from listening than from anything we've written. Two questions:</p>
-      <form id="answers" class="form-card" novalidate>
+      <form id="answers" class="form-card" action="https://formspree.io/f/mzezgwje" method="POST" novalidate>
         <label for="q1">What do you think keeps our government from working?</label>
         <textarea id="q1" name="what_keeps_it_from_working" rows="4"></textarea>
         <label for="q2">What would you change to fix it?</label>
@@ -37,6 +37,7 @@
         <label for="email">Email <span class="opt">(optional, only if you'd like a reply)</span></label>
         <input id="email" name="email" type="email" autocomplete="email" inputmode="email">
         <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="_subject" value="New answers from gov.science">
         <p class="form-error" id="form-error" role="alert" hidden></p>
         <button type="submit" class="btn btn-dark" id="send">Send it</button>
         <p class="form-note">We read every one. Your email is only used to reply to you.</p>
@@ -57,7 +58,7 @@
       the thank-you appears right here on the page. Any service that accepts a normal form POST
       and answers with JSON will work.
    2. FORM_ENDPOINT empty: the visitor's email app opens with their answers filled in. */
-var FORM_ENDPOINT = '';
+var FORM_ENDPOINT = 'https://formspree.io/f/mzezgwje';
 var FALLBACK_TO = 'getinvolved@statecraftblueprint.org';
 (function(){
   var form=document.getElementById('answers'), done=document.getElementById('done'),
@@ -78,7 +79,13 @@ var FALLBACK_TO = 'getinvolved@statecraftblueprint.org';
     }
     btn.disabled=true; btn.textContent='Sending...';
     fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
-      .then(function(r){ if(r.ok){showDone();} else {fail('That didn\'t go through. Please try again, or email '+FALLBACK_TO+'.');} })
+      .then(function(r){
+        if(r.ok){showDone();return;}
+        return r.json().then(function(data){
+          var msg=(data&&data.errors&&data.errors.length)?data.errors.map(function(x){return x.message}).join(' '):'';
+          fail(msg ? msg : 'That didn\'t go through. Please try again, or email '+FALLBACK_TO+'.');
+        },function(){fail('That didn\'t go through. Please try again, or email '+FALLBACK_TO+'.');});
+      })
       .catch(function(){fail('That didn\'t go through. Please check your connection and try again.');});
   });
 })();
