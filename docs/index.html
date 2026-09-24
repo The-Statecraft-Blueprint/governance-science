@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>gov.science: Government For 2030+ Not 1790.</title>
-<meta name="description" content="Government doesn't work the way anything else in modern life does. It hasn't been redesigned since 1790. gov.science is about the study of how government makes laws, and how to design it to get better.">
+<title>gov.science: What if government were boring?</title>
+<meta name="description" content="What if government were as boring as your water, your power, or your phone? No drama. It just works, and it quietly gets better.">
 <link rel="canonical" href="https://gov.science/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#1a3387">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gov.science/">
-<meta property="og:title" content="Government For 2030+ Not 1790.">
-<meta property="og:description" content="Government doesn't work the way anything else in modern life does. It hasn't been redesigned since 1790. gov.science is about the study of how government makes laws, and how to design it to get better.">
+<meta property="og:title" content="What if government were as boring as your water, your power, or your phone?">
+<meta property="og:description" content="What if government were as boring as your water, your power, or your phone? No drama. It just works, and it quietly gets better.">
 <meta property="og:image" content="https://gov.science/assets/social-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -19,328 +19,29 @@
 <meta name="twitter:site" content="@governsci">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
-<style>
-:root{
-  --indigo:#1a3387;      /* sampled from the billboard */
-  --indigo-deep:#172667;
-  --lavender:#bfdbfd;    /* "Not 1790." */
-  --chalk:#ffffff;
-  --ink:#1b1f3a;
-  --ink-soft:#4a4f72;
-  --ground:#f6f6fb;
-  --surface:#ffffff;
-  --rule:#dcdef0;
-  --accent:#2a3fa8;
-  --accent-ink:#ffffff;
-  --warn:#b4452f;
-  --ok:#2f7a55;
-  --display:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ink:#e8e9f7; --ink-soft:#a9adcf; --ground:#10132a; --surface:#181c3a;
-    --rule:#2c3160; --accent:#b9bdf2; --accent-ink:#141836; --warn:#f08a70; --ok:#7fd1a6;
-  }
-}
-:root[data-theme="dark"]{
-  --ink:#e8e9f7; --ink-soft:#a9adcf; --ground:#10132a; --surface:#181c3a;
-  --rule:#2c3160; --accent:#b9bdf2; --accent-ink:#141836; --warn:#f08a70; --ok:#7fd1a6;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--ink);font:400 1.125rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{max-width:40rem;margin:0 auto;padding-inline:20px}
-h2{font:700 clamp(1.5rem,4.5vw,2rem)/1.2 var(--display);letter-spacing:-.01em;margin:0 0 .9rem;text-wrap:balance}
-p{margin:0 0 1.05rem}
-section{padding-block:3.25rem}
-section + section{border-top:1px solid var(--rule)}
-em{font-style:italic}
-
-/* ---------- hero: the billboard, carried onto the page ---------- */
-.hero{background:var(--indigo);color:var(--chalk);overflow:hidden;position:relative}
-.hero-inner{max-width:72rem;margin:0 auto;padding:28px 20px 0;display:grid;grid-template-columns:1fr;gap:8px;position:relative}
-.mark{display:flex;align-items:center;gap:10px;font:600 1.05rem/1 var(--display);color:var(--lavender);text-decoration:none}
-.mark svg{width:30px;height:30px;flex:none}
-.hero h1{font:800 clamp(2.4rem,9vw,4.6rem)/1.02 var(--display);letter-spacing:-.02em;margin:1.4rem 0 .5rem;text-wrap:balance}
-.hero h1 span{display:block;color:var(--lavender)}
-.hero .lede{font:400 1.2rem/1.55 var(--body);max-width:30rem;color:#e4e6fb;margin:0 0 1.5rem}
-.hero .art{margin:0 -20px -4px auto;width:min(100% + 40px,760px);display:block}
-.hero .art img{display:block;width:100%;height:auto}
-@media (min-width:880px){
-  .hero-inner{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:end;padding-top:36px}
-  .hero-copy{padding-bottom:64px}
-  .hero .art{margin:0 -20px 0 -60px;width:auto}
-}
-.notgov{background:var(--indigo-deep);color:#dfe2fb;font:400 1rem/1.55 var(--body)}
-.notgov .wrap{padding-block:1.4rem}
-.notgov strong{font:600 1rem var(--display);color:var(--chalk);display:block;margin-bottom:.25rem;letter-spacing:.01em}
-.notgov p{margin:0}
-
-/* ---------- buttons ---------- */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font:600 1rem/1 var(--display);padding:.95em 1.4em;border-radius:6px;text-decoration:none;border:2px solid var(--accent);cursor:pointer;transition:transform .15s ease,background .15s ease}
-.btn-primary{background:var(--accent);color:var(--accent-ink)}
-.btn-ghost{background:transparent;color:var(--accent)}
-.btn:hover{transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--lavender);outline-offset:3px}
-.btn-hero{background:var(--chalk);color:var(--indigo);border-color:var(--chalk)}
-
-/* ---------- 1790 then/now ---------- */
-.then-now{list-style:none;padding:0;margin:1.4rem 0 1.6rem;display:grid;gap:0;border-top:1px solid var(--rule)}
-.then-now li{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--rule)}
-.then-now b{font:600 .8rem/1.4 var(--display);text-transform:uppercase;letter-spacing:.08em;color:var(--accent);padding-top:.3rem}
-@media (max-width:480px){.then-now li{grid-template-columns:1fr;gap:.2rem}}
-.kicker{font:700 1.3rem/1.35 var(--display);letter-spacing:-.01em;margin:1.6rem 0 .8rem;text-wrap:balance}
-
-/* ---------- Utah story ---------- */
-.eyebrow{font:600 .78rem/1 var(--display);text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft);margin:0 0 .8rem}
-blockquote{margin:1.4rem 0;padding:0 0 0 1.1rem;border-left:3px solid var(--warn);font:italic 400 1.35rem/1.45 var(--body)}
-blockquote cite{display:block;font:400 .85rem/1.4 var(--display);font-style:normal;color:var(--ink-soft);margin-top:.5rem}
-.anatomy{margin:2rem 0 1.6rem;border:1px solid var(--rule);background:var(--surface);border-radius:8px;overflow:hidden}
-.anatomy-head{font:600 .78rem/1 var(--display);text-transform:uppercase;letter-spacing:.12em;padding:.9rem 1.1rem;border-bottom:1px solid var(--rule);color:var(--ink-soft);display:flex;justify-content:space-between;gap:1rem}
-.part{display:grid;grid-template-columns:8.5rem 1fr auto;gap:1rem;align-items:start;padding:1.1rem;border-bottom:1px solid var(--rule)}
-.part:last-child{border-bottom:0}
-.part h3{font:700 1.05rem/1.3 var(--display);margin:0}
-.part p{margin:0;font-size:1rem;line-height:1.5}
-.part .here{display:block;color:var(--ink-soft);font-size:.95rem;margin-top:.3rem}
-.tag{justify-self:start;font:600 .72rem/1 var(--display);text-transform:uppercase;letter-spacing:.08em;padding:.45em .6em;border-radius:4px;white-space:nowrap;border:1.5px solid currentColor}
-.tag.bad{color:var(--warn)} .tag.ok{color:var(--ok)}
-@media (max-width:560px){.part{grid-template-columns:1fr auto}.part p{grid-column:1 / -1}}
-
-/* ---------- structural band ---------- */
-.band{background:var(--indigo);color:#e4e6fb;border-top:0 !important}
-.band h2{color:var(--chalk);font-size:clamp(1.8rem,6vw,2.6rem)}
-.band h2 span{color:var(--lavender)}
-.band + section{border-top:0}
-
-/* ---------- building ---------- */
-.building{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.6rem 0}
-.building div{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:1rem}
-.building b{display:block;font:600 .78rem/1.3 var(--display);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
-.building .ps b{color:var(--ink-soft)}
-.building .gs{border-color:var(--accent);border-width:2px}
-.building .gs b{color:var(--accent)}
-.building p{margin:0;font-size:1rem;line-height:1.5}
-@media (max-width:480px){.building{grid-template-columns:1fr}}
-
-/* ---------- start here ---------- */
-.book{display:grid;gap:1.2rem;margin-top:1.4rem;padding:1.6rem;background:var(--surface);border:1px solid var(--rule);border-radius:10px}
-.book-title{font:800 1.5rem/1.15 var(--display);letter-spacing:-.01em;margin:0}
-.book q{display:block;font:italic 400 1.2rem/1.5 var(--body);quotes:"\201C" "\201D"}
-.deeper{font:700 1.2rem/1.3 var(--display);margin:2.4rem 0 .5rem}
-.book-quiet{background:transparent}
-.book small{font:400 .9rem/1.4 var(--display);color:var(--ink-soft)}
-
-/* ---------- help ---------- */
-.four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.2rem 0 2.2rem}
-.four > a,.four > button,.four > .follow{display:flex;flex-direction:column;gap:.25rem;text-align:left;padding:1rem;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);text-decoration:none;font:inherit;cursor:pointer}
-.four > a:hover,.four > button:hover{border-color:var(--accent)}
-.four strong{font:700 1.05rem/1.2 var(--display);color:var(--accent)}
-.four span{font-size:.92rem;line-height:1.4;color:var(--ink-soft)}
-.socials{display:flex;flex-wrap:wrap;gap:.2rem .7rem;font:600 .88rem/1.5 var(--display)}
-.socials a{color:var(--ink-soft);text-decoration:underline;text-underline-offset:3px}
-.socials a:hover{color:var(--accent)}
-@media (max-width:640px){.four{grid-template-columns:1fr 1fr}}
-.ways{display:grid;gap:1.4rem}
-.way{padding-top:1.2rem;border-top:1px solid var(--rule)}
-.way h3{font:700 1.15rem/1.3 var(--display);margin:0 0 .4rem}
-.way p{margin:0 0 .9rem}
-.roles{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 1rem;padding:0;list-style:none}
-.roles li{font:600 .82rem/1 var(--display);padding:.5em .75em;border-radius:999px;background:var(--surface);border:1px solid var(--rule)}
-
-/* ---------- footer ---------- */
-footer{background:var(--indigo-deep);color:#c9cdf5;font:400 1rem/1.6 var(--body)}
-footer .wrap{padding-block:2.6rem}
-footer a{color:var(--chalk)}
-footer .links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font:600 .92rem/1.4 var(--display);margin:1.2rem 0}
-footer .fine{font:400 .8rem/1.5 var(--display);color:#9aa0d9;margin:0}
-.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--ground);font:600 .9rem var(--display);padding:.7em 1.1em;border-radius:6px}
-@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:hover{transform:none}}
-</style>
-<style>html{-webkit-text-size-adjust:100%}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <a class="mark" href="https://statecraftblueprint.org" aria-label="The Statecraft Blueprint">
-        <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M16 3 3 10v2.5h26V10z"/><rect x="6" y="14.5" width="3" height="10"/><rect x="11.5" y="14.5" width="3" height="10"/><rect x="17.5" y="14.5" width="3" height="10"/><rect x="23" y="14.5" width="3" height="10"/><rect x="3" y="26" width="26" height="3"/></svg>
-        The Statecraft Blueprint
-      </a>
-      <h1>Government For 2030+ <span>Not 1790.</span></h1>
-      <p class="lede">If you typed this in because you're wondering what 1790 has to do with anything, good. That's the question I was hoping you'd ask.</p>
+<main class="screen">
+  <div class="screen-top"><a class="mark" href="https://statecraftblueprint.org" data-goatcounter-click="home-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 3 10v2.5h26V10z"/><rect x="6" y="14.5" width="3" height="10"/><rect x="11.5" y="14.5" width="3" height="10"/><rect x="17.5" y="14.5" width="3" height="10"/><rect x="23" y="14.5" width="3" height="10"/><rect x="3" y="26" width="26" height="3"/></svg>The Statecraft Blueprint</a></div>
+  <div class="screen-main">
+    <div class="screen-body">
+      <div class="wrap">
+        <p class="echo">Government For 2030+ &middot; Not 1790.</p>
+        <h1 class="hook">What if government were as boring as your water, your power, or <em>your phone?</em></h1>
+        <p class="sub">No drama. No crisis of the week. It just works, and it quietly gets better.</p>
+        <p class="sub"><strong>That's what we're building.</strong></p>
+        <div class="cta">
+          <a class="btn btn-light" href="/how/" data-goatcounter-click="home-how">How could it be possible? &rarr;</a>
+          <small>Three short pages. No politics.</small>
+        </div>
+      </div>
     </div>
-    <div class="art"><img src="assets/capitol.webp" alt="The U.S. Capitol drawn half as marble, half as an architect's blueprint" width="722" height="343"></div>
+    <div class="screen-art"><img src="/assets/capitol.webp" alt="The U.S. Capitol drawn half as marble, half as an architect's blueprint" width="722" height="343"></div>
   </div>
-</header>
-
-<div class="notgov" role="note">
-  <div class="wrap">
-    <strong>This isn't a government site.</strong>
-    <p>And I don't work for the government. gov.science is about the <em>study</em> of government. Not what our laws should say, but how they get made: who writes them, what the words actually do, and why so many of them end up producing something nobody asked for.</p>
-  </div>
-</div>
-
-<main>
-  <section id="why-1790">
-    <div class="wrap">
-      <h2>Why 1790</h2>
-      <p>In 1790, the United States counted its people for the first time. There were about four million of us.</p>
-      <p>Most people farmed. News moved as fast as a horse or a sailing ship. There was no electricity. Doctors didn't know germs caused disease, and they still bled patients to cure them.</p>
-      <p>That's the country our system of government was designed for. The people who designed it did remarkable work. They built something that has lasted longer than almost any government on Earth.</p>
-      <p>Now look at what's happened since.</p>
-      <ul class="then-now">
-        <li><b>Farming</b><span>In 1790, almost everyone farmed just to eat. Today fewer than 2 in 100 Americans work on farms, and they feed the rest of us.</span></li>
-        <li><b>Medicine</b><span>We went from bloodletting to vaccines, antibiotics, and heart transplants.</span></li>
-        <li><b>Transportation</b><span>Boston to New York took days by stagecoach. Now it's about an hour in the air, and flying is one of the safest ways to travel ever invented.</span></li>
-      </ul>
-      <p>None of that happened by accident. People studied what went wrong, figured out why, and redesigned. Then they did it again. Every airliner flying today carries lessons from the ones that crashed.</p>
-      <p>Government has changed since 1790, but not like that. Nobody investigates its failures the way we investigate a crash, and nobody redesigns it on purpose.</p>
-      <p class="kicker">That's what The Statecraft Blueprint is for. We study government the way engineers study airliners, so it can be designed to get better.</p>
-      <p>Here's what the current design looks like up close, right here in Utah.</p>
-    </div>
-  </section>
-
-  <section id="utah">
-    <div class="wrap">
-      <p class="eyebrow">A Utah story</p>
-      <h2>The 100% ID law</h2>
-      <p>You may have heard about H.B. 437, the "100% ID law." Starting January 1, 2026, every alcohol purchase in Utah required an ID, scanned electronically. Every customer, every age.</p>
-      <p>You probably heard about the backlash too. Restaurants turned away whole tables because one person left their ID at the hotel. Visitors from overseas couldn't order a beer without a passport. Retirees were getting carded for the first time in decades.</p>
-      <p>When people asked why, the bill's sponsor said:</p>
-      <blockquote>"This was never the intent of the bill."<cite>Rep. Steve Eliason, <a href="https://www.newsweek.com/new-id-law-for-alcohol-could-soon-be-modified-11667484">Newsweek, March 2026</a></cite></blockquote>
-      <p>So what was the intent?</p>
-      <p>The bill's name is a clue: <em>Interdicted Person Amendments.</em> When a court bars someone from buying alcohol after certain DUI convictions, Utah prints a red NO ALCOHOL SALE banner on their license. The goal was to catch those people.</p>
-      <p>But the scanners the law required check your age. They aren't built to catch that banner. The state's own guidance says staff still have to look at the card, which is the same check that existed before the law.</p>
-      <p>And that goal, catching people barred from buying alcohol, isn't written anywhere in <a href="https://le.utah.gov/Session/2025/bills/enrolled/HB0437.pdf">the law</a>. So there was nothing to measure the law against. Nobody could tell whether it worked, because nobody wrote down what "worked" would mean.</p>
-      <p>By spring, the legislature had scaled it back.</p>
-      <p>There are no villains in this story. The sponsor had a real goal. Businesses followed the rules. What was missing was a piece of the design. Every law is really three things:</p>
-
-      <div class="anatomy" role="group" aria-label="The three parts of H.B. 437">
-        <div class="anatomy-head"><span>Anatomy of a law</span><span>H.B. 437</span></div>
-        <div class="part">
-          <h3>Mandate</h3>
-          <p>What the law is supposed to accomplish.<span class="here">Here: keep people a court has barred from buying alcohol.</span></p>
-          <span class="tag bad">Never written</span>
-        </div>
-        <div class="part">
-          <h3>Architecture</h3>
-          <p>How it's supposed to accomplish that.<span class="here">Here: scan every ID.</span></p>
-          <span class="tag bad">Didn't fit</span>
-        </div>
-        <div class="part">
-          <h3>Execution</h3>
-          <p>Whether it was carried out as written.<span class="here">Here: bars and restaurants did exactly what the law said.</span></p>
-          <span class="tag ok">Worked</span>
-        </div>
-      </div>
-
-      <p>The execution was fine. The architecture didn't fit the mandate. And because the mandate was never written into the law, nobody could see the mismatch until it showed up at the dinner table.</p>
-      <p>Utah isn't unusual. This is how American laws are ordinarily written, in every state and in Congress.</p>
-    </div>
-  </section>
-
-  <section class="band" id="structural">
-    <div class="wrap">
-      <h2>Not left. Not right. <span>Structural.</span></h2>
-      <p>I'm not here to tell you what to think about guns, taxes, immigration, or anything else. Those are questions of values. Reasonable people disagree about them, and in a democracy they should get to argue it out.</p>
-      <p>This project is about what sits underneath all of that: the system that turns what we decide into what actually happens. The rules that shape the rules.</p>
-      <p>H.B. 437 is what that looks like. Good intentions went in, and something nobody asked for came out. When the system is badly designed, it doesn't matter which side wins.</p>
-    </div>
-  </section>
-
-  <section id="political-science">
-    <div class="wrap">
-      <h2>"Isn't that just political science?"</h2>
-      <p>No. They're looking at different things.</p>
-      <p>Imagine the government is a building. Nearly all our attention goes to what happens inside it: who gets which office, how the rooms are decorated, who won the argument about the paint. That's politics, and it's mostly what political science studies. How people vote, how parties behave, how power moves from room to room.</p>
-      <div class="building">
-        <div class="ps"><b>Politics</b><p>What happens inside. Who's in which office, and the fights over the decor.</p></div>
-        <div class="gs"><b>Governance science</b><p>The building itself. Walls, doors, and what's load-bearing.</p></div>
-      </div>
-      <p>Governance science looks at the building itself. Where the walls are. Which doors lead where. What's load-bearing. The floor plan decides how everyone inside moves, no matter who lives there.</p>
-      <p>Almost nobody looks at the building. Meanwhile the foundation is cracking and the roof leaks, and we keep repainting the rooms and wondering why the water keeps coming in.</p>
-      <p>You don't fix a cracked foundation by picking new curtains. And you don't fix it by burning the building down. You get an engineer to look at it.</p>
-      <p>That's the separation this project exists to make. How to decorate is a question of values, and people will always disagree about it. How the building works is something we can study, redesign, and check.</p>
-    </div>
-  </section>
-
-  <section id="start">
-    <div class="wrap">
-      <h2>Start here</h2>
-      <p>If that story left you asking "wait, why do we write laws like that?", I wrote the whole thing up, including what I think should be built to fix it.</p>
-      <div class="book">
-        <p class="book-title">A Law That Nobody Could Check</p>
-        <small>The full H.B. 437 story, and the institution it points to.</small>
-        <div><a class="btn btn-primary" href="https://statecraftblueprint.org/p/a-law-that-nobody-could-check" data-goatcounter-click="start-read-full-story">Read the full story &rarr;</a></div>
-      </div>
-      <h3 class="deeper">Want to go deeper?</h3>
-      <p>My book, <em>The Rules that Shape the Rules</em>, walks you through finding the source of Congress's dysfunction yourself, one observation at a time.</p>
-      <div class="book book-quiet">
-        <q>If you are distressed by the state of our government and politics in this country, you are the person I want to talk to.</q>
-        <small>From Chapter 1. Published one chapter at a time, free.</small>
-        <div><a class="btn btn-ghost" href="https://statecraftblueprint.org/p/chapter-1-it-begins-with-why" data-goatcounter-click="start-read-chapter-1">Read Chapter 1 &rarr;</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="help">
-    <div class="wrap">
-      <h2>It's going to take all of us</h2>
-      <p>No one person redesigns a government. Here's how you can help, whatever you have to give.</p>
-      <div class="four">
-        <a href="https://statecraftblueprint.org/p/a-law-that-nobody-could-check" data-goatcounter-click="help-read"><strong>Read</strong><span>Start with the H.B. 437 story.</span></a>
-        <a href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="help-subscribe"><strong>Subscribe</strong><span>New chapters by email, free.</span></a>
-        <div class="follow"><strong>Follow</strong><span class="socials"><a href="https://x.com/governsci" data-goatcounter-click="follow-x">X</a><a href="https://bsky.app/profile/statecraftblueprnt.bsky.social" data-goatcounter-click="follow-bluesky">Bluesky</a><a href="https://www.facebook.com/statecraftblueprint" data-goatcounter-click="follow-facebook">Facebook</a><a href="https://www.linkedin.com/company/the-statecraft-blueprint" data-goatcounter-click="follow-linkedin">LinkedIn</a><a href="https://substack.com/@thestatecraftblueprint" data-goatcounter-click="follow-substack">Substack</a></span></div>
-        <button type="button" id="share"><strong>Share</strong><span>Send this to someone who's given up on politics.</span></button>
-      </div>
-      <div class="ways">
-        <div class="way">
-          <h3>If you have skills</h3>
-          <ul class="roles"><li>Graphic designers</li><li>Engineers</li><li>Economists</li><li>Things I haven't thought of yet</li></ul>
-          <p>Tell me what you do.</p>
-          <a class="btn btn-ghost" href="mailto:getinvolved@statecraftblueprint.org?subject=I%20want%20to%20help%20(gov.science)" data-goatcounter-click="help-volunteer">Volunteer your skills</a>
-        </div>
-        <div class="way">
-          <h3>If you have time</h3>
-          <p>There's research to be done and data to be analyzed: laws to read, outcomes to track, numbers nobody has pulled together yet. If you're curious and careful, there's a place for you.</p>
-          <a class="btn btn-ghost" href="mailto:getinvolved@statecraftblueprint.org?subject=Research%20help%20(gov.science)" data-goatcounter-click="help-research">Help with research</a>
-        </div>
-        <div class="way">
-          <h3>If you have money but not time</h3>
-          <p>A paid subscription keeps this independent and pays for things like the billboard that brought you here.</p>
-          <a class="btn btn-ghost" href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="help-paid">Become a paid subscriber</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <footer class="screen-foot"><div class="wrap"><span>Not a government website.</span><a href="/more/" data-goatcounter-click="home-longer-version">The longer version &rarr;</a></div></footer>
 </main>
-
-<footer>
-  <div class="wrap">
-    <p>I'm Jason Edwards, and I write The Statecraft Blueprint. Not affiliated with any party, candidate, or campaign.</p>
-    <p><strong style="color:#fff">Other work:</strong> <a href="https://ringthebells.org" data-goatcounter-click="footer-church-bells">Church Bells</a>, where we read new bills and executive orders from the actual text and flag what they change. And <a href="https://github.com/The-Statecraft-Blueprint/governance-science" data-goatcounter-click="footer-governance-science">Governance Science</a>, an open library of the ideas behind all of this.</p>
-    <div class="links"><a href="https://statecraftblueprint.org" data-goatcounter-click="footer-tsb">The Statecraft Blueprint</a><a href="https://ringthebells.org" data-goatcounter-click="footer-church-bells-link">Church Bells</a><a href="https://github.com/The-Statecraft-Blueprint/governance-science" data-goatcounter-click="footer-governance-science-link">Governance Science</a><a href="mailto:jason@statecraftblueprint.org" data-goatcounter-click="footer-contact">Contact</a></div>
-    <div class="links"><a href="https://x.com/governsci" data-goatcounter-click="footer-x">X</a><a href="https://bsky.app/profile/statecraftblueprnt.bsky.social" data-goatcounter-click="footer-bluesky">Bluesky</a><a href="https://www.facebook.com/statecraftblueprint" data-goatcounter-click="footer-facebook">Facebook</a><a href="https://www.linkedin.com/company/the-statecraft-blueprint" data-goatcounter-click="footer-linkedin">LinkedIn</a><a href="https://substack.com/@thestatecraftblueprint" data-goatcounter-click="footer-substack">Substack</a></div>
-    <p class="fine">Paid for by The Statecraft Blueprint, LLC.</p>
-  </div>
-</footer>
-<div class="toast" id="toast" hidden>Link copied</div>
-
-<script>
-(function(){
-  var btn=document.getElementById('share'), toast=document.getElementById('toast');
-  var url='https://gov.science', text='Government For 2030+ Not 1790.';
-  btn.addEventListener('click',function(){
-    try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'help-share',title:'Share button',event:true})}catch(e){}
-    if(navigator.share){navigator.share({title:'gov.science',text:text,url:url}).catch(function(){});return;}
-    var done=function(){toast.hidden=false;setTimeout(function(){toast.hidden=true},1800)};
-    try{navigator.clipboard.writeText(url).then(done,done)}catch(e){done()}
-  });
-})();
-</script>
-<!-- Visitor counts: GoatCounter (no cookies, no personal data, no consent banner needed). Dashboard: https://govscience.goatcounter.com -->
 <script data-goatcounter="https://govscience.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
