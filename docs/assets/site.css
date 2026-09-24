@@ -141,3 +141,5 @@ blockquote cite{display:block;font:400 .85rem/1.4 var(--display);font-style:norm
 .next small{font:400 .95rem/1.4 var(--body);color:var(--ink-soft)}
 .ask-page{margin-top:0;min-height:calc(100svh - 130px)}
 .ask .ask-h{font:700 clamp(1.8rem,6vw,2.5rem)/1.12 var(--display);letter-spacing:-.015em;margin:0 0 .8rem}
+.story .focus3{font:600 1.15rem/1.6 var(--display);margin:1.6rem 0;padding-left:1rem;border-left:3px solid var(--accent)}
+.story .focus3 strong{font-weight:700;color:var(--accent);font-size:1.3rem}
