@@ -190,3 +190,11 @@ blockquote cite{display:block;font:400 .85rem/1.4 var(--display);font-style:norm
   .layers td:nth-child(3){grid-column:2;grid-row:1;text-align:right}
   .status{white-space:normal;text-align:center}
 }
+.study{padding:1.2rem 0;border-bottom:1px solid var(--rule)}
+.study:last-child{border-bottom:0}
+.study-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem}
+.study-head h3{margin:0}
+.study-head .status{margin-top:.15rem;flex:none}
+.study p{font-size:1.02rem;line-height:1.55;margin:0 0 .6rem}
+.study .study-link{margin:0;font:600 .95rem/1.4 var(--display)}
+@media (max-width:520px){.study-head{flex-direction:column;gap:.4rem}}
