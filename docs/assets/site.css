@@ -198,3 +198,5 @@ blockquote cite{display:block;font:400 .85rem/1.4 var(--display);font-style:norm
 .study p{font-size:1.02rem;line-height:1.55;margin:0 0 .6rem}
 .study-link{margin:0;font:600 .95rem/1.4 var(--display)}
 @media (max-width:520px){.study-head{flex-direction:column;gap:.4rem}}
+.doc .lead-in{font:500 1.12rem/1.55 var(--body);color:var(--ink);margin:0 0 1.6rem;padding-bottom:1.4rem;border-bottom:1px dashed var(--rule)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--ground);font:600 .9rem var(--display);padding:.7em 1.1em;border-radius:6px}

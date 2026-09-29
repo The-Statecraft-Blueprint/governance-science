@@ -44,7 +44,6 @@
     <p>Politics sets the goals. Government does the work. Governance is the set of rules that shapes how that work gets done: how a bill reaches the floor, how votes are cast and recorded, how a law is written, how an agency carries it out, and how anyone finds out whether it worked. Politics decides what we want. Governance determines what is actually produced.</p>
     <p>This project stays out of politics on purpose. Reasonable people disagree about goals, and in a democracy those disagreements are settled by voting. What we study is the machinery, and whether it turns decisions into results no matter who wins. The same machinery serves every party that holds power, and when it is badly designed, it fails all of them.</p>
     <p>The line is not perfectly clean. Some design choices carry political weight of their own. When they do, the aim is to state them openly, so they can be argued about on their merits, rather than bury them in the drafting.</p>
-    <p>Governance science has two main parts: <strong>design</strong>, getting the rules right before they take effect, and <strong>measurement</strong>, checking afterward whether they did what they were meant to do.</p>
   </section>
 
   <section id="problem">
@@ -54,12 +53,13 @@
   </section>
 
   <section id="design">
+    <p class="lead-in">Governance science has two main parts: <strong>design</strong>, getting the rules right before they take effect, and <strong>measurement</strong>, checking afterward whether they did what they were meant to do.</p>
     <h2>Design: getting the rules right</h2>
     <p>Rules shape behavior. People respond to the incentives a rule creates, whoever they are. A well-designed rule points those incentives toward its goal. A poorly designed one rewards something else, and capable, well-meaning people working inside it still produce bad results.</p>
     <p>Design work asks a few questions before a rule takes effect:</p>
     <ul class="plain">
       <li>What is it for? (the mandate)</li>
-      <li>Does the mechanism actually serve that goal? (the architecture)</li>
+      <li><strong>Does the mechanism actually serve that goal? (the architecture)</strong></li>
       <li>What will the people it touches be rewarded for doing?</li>
       <li>What else will it do, and what will it cost?</li>
       <li>How will anyone know whether it worked?</li>
@@ -194,12 +194,26 @@
     <ul class="plain">
       <li><a href="/tell-us/" data-goatcounter-click="home-tell-us">Tell us what you think</a>: what keeps government from working, and what would fix it.</li>
       <li><a href="mailto:getinvolved@statecraftblueprint.org?subject=Research%20help%20(gov.science)" data-goatcounter-click="home-research-help">Help with research</a>: reading laws, tracking outcomes, analyzing data. Economists, engineers, designers and careful readers are all needed.</li>
-      <li><a href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="home-subscribe">Subscribe</a> to follow new work as it's published.</li>
+      <li><a href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="home-subscribe">Subscribe</a> to follow new work as it's published, and consider a paid subscription, which keeps the work independent.</li>
+      <li><a href="#" id="share" data-goatcounter-click="home-share">Share this page</a>, or any of the work, with someone who's tired of how government works.</li>
     </ul>
   </section>
 
 </main>
 <footer class="foot"><div class="wrap"><span>Not a government website.</span><span>The Statecraft Blueprint &middot; <a href="mailto:jason@statecraftblueprint.org" data-goatcounter-click="home-contact">Contact</a></span></div></footer>
+<div class="toast" id="toast" hidden>Link copied</div>
+<script>
+(function(){
+  var link=document.getElementById('share'), toast=document.getElementById('toast');
+  link.addEventListener('click',function(e){
+    e.preventDefault();
+    var url='https://gov.science', text='Governance science: applying the scientific method to how government works.';
+    if(navigator.share){navigator.share({title:'gov.science',text:text,url:url}).catch(function(){});return;}
+    var done=function(){toast.hidden=false;setTimeout(function(){toast.hidden=true},1800)};
+    try{navigator.clipboard.writeText(url).then(done,done)}catch(err){done()}
+  });
+})();
+</script>
 <script data-goatcounter="https://govscience.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
