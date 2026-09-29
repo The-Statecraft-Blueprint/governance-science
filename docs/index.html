@@ -34,23 +34,45 @@
 <main class="doc">
 
   <section id="governance">
-    <h2>What we mean by governance</h2>
+    <h2>What is "governance"?</h2>
     <p>Three words get used interchangeably, but they mean different things.</p>
     <div class="labels">
-      <div><b>Government</b><span>The institutions: legislatures, agencies, courts, and the people who work in them.</span></div>
-      <div><b>Politics</b><span>The contest over what those institutions should do: which goals, whose priorities, which values win.</span></div>
-      <div><b>Governance</b><span>The machinery in between: the rules and procedures that turn political decisions into actual results.</span></div>
+      <div><b>Politics</b><span>The contest over what government should do: which goals, whose priorities, which values win.</span></div>
+      <div><b>Government</b><span>The institutions that do the work: legislatures, agencies, courts, and the people in them.</span></div>
+      <div><b>Governance</b><span>The rules and procedures government runs on, which turn political decisions into real outcomes.</span></div>
     </div>
-    <p>Governance is how a bill reaches the floor, how votes are cast and recorded, how a law is written, how an agency carries it out, and how anyone finds out whether it worked. Politics decides what we want. Governance determines whether we get it.</p>
+    <p>Politics sets the goals. Government does the work. Governance is the set of rules that shapes how that work gets done: how a bill reaches the floor, how votes are cast and recorded, how a law is written, how an agency carries it out, and how anyone finds out whether it worked. Politics decides what we want. Governance determines what is actually produced.</p>
     <p>This project stays out of politics on purpose. Reasonable people disagree about goals, and in a democracy those disagreements are settled by voting. What we study is the machinery, and whether it turns decisions into results no matter who wins. The same machinery serves every party that holds power, and when it is badly designed, it fails all of them.</p>
     <p>The line is not perfectly clean. Some design choices carry political weight of their own. When they do, the aim is to state them openly, so they can be argued about on their merits, rather than bury them in the drafting.</p>
+    <p>Governance science has two main parts: <strong>design</strong>, getting the rules right before they take effect, and <strong>measurement</strong>, checking afterward whether they did what they were meant to do.</p>
   </section>
 
   <section id="problem">
     <h2>Why this is needed</h2>
     <p>Aviation, medicine and automobile safety all improved the same way. When something failed, people investigated, traced the failure to a cause, changed the design, and checked whether the change worked. Over decades, that loop made each of them dramatically safer.</p>
-    <p>Government mostly lacks that loop, at both ends. Before a law passes, it is rarely designed the way engineered systems are: the incentives it creates, and whether its mechanism actually serves its goal, are seldom worked out in advance. After it passes, there is usually nothing to check it against. A law spells out what to do, but it rarely says what doing it should accomplish, in terms anyone could verify later.</p>
-    <p>When a law goes wrong, the argument that follows is about who is to blame, not about what in the design failed.</p>
+    <p>Government mostly lacks that loop, at both ends. Before a law passes, it is rarely designed the way engineered systems are: the incentives it creates, and whether its mechanism actually serves its goal, are seldom worked out in advance. After it passes, there is usually nothing to check it against. When a law goes wrong, the argument that follows is about who is to blame, not about what in the design failed.</p>
+  </section>
+
+  <section id="design">
+    <h2>Design: getting the rules right</h2>
+    <p>Rules shape behavior. People respond to the incentives a rule creates, whoever they are. A well-designed rule points those incentives toward its goal. A poorly designed one rewards something else, and capable, well-meaning people working inside it still produce bad results.</p>
+    <p>Design work asks a few questions before a rule takes effect:</p>
+    <ul class="plain">
+      <li>What is it for? (the mandate)</li>
+      <li>Does the mechanism actually serve that goal? (the architecture)</li>
+      <li>What will the people it touches be rewarded for doing?</li>
+      <li>What else will it do, and what will it cost?</li>
+      <li>How will anyone know whether it worked?</li>
+    </ul>
+    <h3 style="margin-top:1.4rem">The bootstrap problem</h3>
+    <p>There is a catch. The laws that apply to citizens and businesses are written by a government that runs on rules of its own: how bills reach the floor, how committees work, how votes are recorded, how agencies are overseen. Those internal rules shape every law that comes out, so they need the same design discipline as the laws themselves. The work has to start with the rules that shape the rules, which is why much of this project's research focuses on how Congress itself operates.</p>
+    <p>To help with all of this, the project is building a <a href="https://github.com/The-Statecraft-Blueprint/governance-science/tree/main/patterns" data-goatcounter-click="home-patterns">library of design patterns</a>: recurring design problems, and approaches that have worked for them elsewhere.</p>
+  </section>
+
+  <section id="measurement">
+    <h2>Measurement: checking whether it worked</h2>
+    <p>A law usually spells out what to do, but it rarely says what doing it should accomplish, in terms anyone could check later. Without a stated goal, there is nothing to measure against.</p>
+    <p>Measurement means stating the goal up front, deciding in advance what evidence would show success or failure, and then looking. When a law falls short, it also means locating the failure: was the goal wrong, was the design wrong, or was it carried out badly? Each has a different fix, and without a stated goal, they are impossible to tell apart.</p>
     <div class="callout">
       <p>Utah's 2025 "100% ID law" is a recent example. Its sponsor later said the way it operated "was never the intent of the bill," but the intent was never written into the law, so no one could tell whether it worked. <a href="/utah/" data-goatcounter-click="home-utah">Read the 60-second version &rarr;</a></p>
     </div>
@@ -70,33 +92,36 @@
     <p>None of this removes values from government. Deciding what a law should accomplish is a political question, and it should be. The claim is narrower: once the goal is stated, whether a design achieves it can be checked.</p>
   </section>
 
-  <section id="design">
-    <h2>Designing rules that serve their goals</h2>
-    <p>Measuring results is half the work. The other half is design, done before a law takes effect.</p>
-    <p>Rules shape behavior. People respond to the incentives a rule creates, whoever they are. A well-designed rule points those incentives toward its goal. A poorly designed one rewards something else, and capable, well-meaning people working inside it still produce bad results.</p>
-    <p>Design work asks a few questions before a law passes:</p>
+  <section id="standards">
+    <h2>How the work holds itself to account</h2>
+    <p>A project that faults government for never checking its own work has to check its own. If we ask laws to state their goals and be tested against them, our claims have to meet the same standard. Otherwise this is just one more opinion about government.</p>
+    <p>It also means the work can be judged without trusting us. Anyone can see how strong the evidence is behind a claim, and what would prove it wrong. Every significant claim carries a label saying how strong the evidence is:</p>
+    <div class="labels">
+      <div><b>Documented</b><span>Backed by a source you can read.</span></div>
+      <div><b>Formalized</b><span>A reasoned model of how something works, not yet tested.</span></div>
+      <div><b>Proposed</b><span>A recommendation, and marked as one.</span></div>
+      <div><b>Unverified</b><span>Plausible, but not yet checked.</span></div>
+    </div>
     <ul class="plain">
-      <li>What is it for? (the mandate)</li>
-      <li>Does the mechanism actually serve that goal? (the architecture)</li>
-      <li>What will the people it touches be rewarded for doing?</li>
-      <li>What else will it do, and what will it cost?</li>
-      <li>How will anyone know whether it worked?</li>
+      <li>Claims state what would prove them wrong.</li>
+      <li>Test rules are fixed before testing, and completed research records are frozen. Corrections go in a separate, dated erratum.</li>
+      <li>The research is public and free to reuse under a Creative Commons license (CC BY-SA 4.0).</li>
+      <li>It is nonpartisan by design. The work diagnoses rules and incentives, not people or parties.</li>
     </ul>
-    <p>Utah's ID law failed the second question: the mechanism it required, scanning for age, did not serve its goal of stopping sales to people a court had barred. To help with questions like these, the project is building a <a href="https://github.com/The-Statecraft-Blueprint/governance-science/tree/main/patterns" data-goatcounter-click="home-patterns">library of design patterns</a>: recurring design problems, and approaches that have worked for them elsewhere.</p>
   </section>
 
   <section id="gda">
     <h2>The Governance Design Agency</h2>
-    <p>The project's flagship proposal puts both halves, design and checking, into one institution.</p>
-    <p>The Governance Design Agency (GDA) is a proposed institution with a single function: designing the <em>how</em>, the implementation that pursues a goal someone else has set. In one line:</p>
-    <div class="callout"><p><em>You tell us what you want to achieve. We will tell you what would achieve it, what it would cost, and what else it would do.</em></p></div>
-    <ul class="plain">
-      <li>It does not decide what government should do. Setting the goal stays with elected officials.</li>
-      <li>It does not implement, enforce or judge anything.</li>
-      <li>Its designs are recommendations. They carry legal force only where a legislature chooses to adopt them.</li>
-      <li>It keeps the record: what it recommended, what was actually done, and the reasons given, so that when something fails, the failure can be traced to the goal, the design, or how it was carried out.</li>
-    </ul>
-    <p>It is a long-term proposal, not a near-term one. The current specification is published, along with a candidate mandate for the agency itself, written so that whether the GDA achieves its purpose could be checked, and offered for anyone to argue with.</p>
+    <p>The project's flagship proposal puts both parts, design and measurement, into one institution. The Governance Design Agency (GDA) is a proposed institution with a single function: designing the <em>how</em>, the implementation that pursues a goal elected officials have set.</p>
+    <div class="callout"><p><em>You tell us what you want to achieve. We will tell you what would achieve it, what it would cost, and what else it would do. Then you decide.</em></p></div>
+    <p>How it would work:</p>
+    <ol class="steps">
+      <li><h3>Politics sets the goal</h3><p>Elected officials decide what society wants to achieve, stated so that success can be checked.</p></li>
+      <li><h3>The GDA designs the options</h3><p>It produces designs that would achieve the goal, with their costs, benefits and side effects spelled out.</p></li>
+      <li><h3>Politics chooses</h3><p>Elected officials pick a design, change it, or reject them all, and pass the result into law. The executive branch carries it out. GDA designs carry legal force only where a legislature adopts them.</p></li>
+      <li><h3>The GDA keeps the record</h3><p>It publishes what it recommended, what was actually done, and the reasons given, so that when something fails, the failure can be traced to the goal, the design, or how it was carried out.</p></li>
+    </ol>
+    <p>The GDA does not set goals, implement, enforce or judge anything. It is a long-term proposal, not a near-term one. The current specification is published, along with a candidate mandate for the agency itself, written so that whether the GDA achieves its purpose could be checked, and offered for anyone to argue with.</p>
     <p class="study-link"><a href="https://statecraftblueprint.org/p/a-law-that-nobody-could-check" data-goatcounter-click="home-gda-spec">Read the specification (v4.0, for paid subscribers; summary free) &rarr;</a></p>
   </section>
 
@@ -128,7 +153,7 @@
 
     <div class="study">
       <div class="study-head"><h3>The captured wave: do new members change Congress?</h3><span class="status use">Underway</span></div>
-      <p>If sending new people to Congress reduced partisanship, wave elections should produce less party-line voting. Comparing House reelection rates with party-line voting from 1970 to 2024 suggests the relationship has flipped. In earlier decades, members arriving in a wave tended to be more independent than those they replaced. In recent decades, they arrive more partisan. If that holds, the institution now shapes new members faster than they can change it, which bears directly on proposals like term limits. Preliminary, using Brookings <em>Vital Statistics on Congress</em> data.</p>
+      <p>If sending new people to Congress reduced partisanship, elections with more turnover should be followed by less party-line voting. Comparing House reelection rates with party-line voting from 1970 to 2024 suggests the relationship has changed. In the 1970s and 1980s, the two were only loosely connected. Since the mid-1990s, they have moved in opposite directions: when more incumbents lose, party-line voting goes up, not down. If that holds, the institution now shapes new members faster than they can change it, which bears directly on proposals like term limits. Preliminary, using Brookings <em>Vital Statistics on Congress</em> data.</p>
     </div>
 
     <div class="study">
@@ -146,25 +171,9 @@
     <div class="study">
       <div class="study-head"><h3>The price of saying no</h3><span class="status early">Early draft</span></div>
       <p>A theoretical foundation for when a rule is genuinely consented to: how much a participant is penalized for withholding agreement, and why that price, more than who holds office, determines how freely people can dissent inside an institution.</p>
+      <p>Organizational research already measures something close to this inside companies. Muel Kaptein's Corporate Ethical Virtues model (2008) assesses, among other dimensions, whether people can raise concerns openly ("discussability") and whether wrongdoing has consequences ("sanctionability"). The working hypothesis is that the same dimensions can be applied to government institutions, to the designs the GDA would produce, and to the GDA itself.</p>
       <p class="study-link"><a href="https://github.com/The-Statecraft-Blueprint/governance-science/blob/main/DSL/dissent_pricing.md" data-goatcounter-click="home-dissent">Dissent pricing, in the working vocabulary &rarr;</a></p>
     </div>
-  </section>
-
-  <section id="standards">
-    <h2>How the work holds itself to account</h2>
-    <p>Every significant claim carries a label saying how strong the evidence is:</p>
-    <div class="labels">
-      <div><b>Documented</b><span>Backed by a source you can read.</span></div>
-      <div><b>Formalized</b><span>A reasoned model of how something works, not yet tested.</span></div>
-      <div><b>Proposed</b><span>A recommendation, and marked as one.</span></div>
-      <div><b>Unverified</b><span>Plausible, but not yet checked.</span></div>
-    </div>
-    <ul class="plain">
-      <li>Claims state what would prove them wrong.</li>
-      <li>Test rules are fixed before testing, and completed research records are frozen. Corrections go in a separate, dated erratum.</li>
-      <li>The research is public and free to reuse under a Creative Commons license (CC BY-SA 4.0).</li>
-      <li>It is nonpartisan by design. The work diagnoses rules and incentives, not people or parties.</li>
-    </ul>
   </section>
 
   <section id="read">
