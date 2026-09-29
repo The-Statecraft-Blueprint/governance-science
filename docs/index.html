@@ -27,16 +27,30 @@
   <div class="inner">
     <a class="mark" href="https://statecraftblueprint.org" data-goatcounter-click="home-mark" data-goatcounter-title="The Statecraft Blueprint (logo)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 3 10v2.5h26V10z"/><rect x="6" y="14.5" width="3" height="10"/><rect x="11.5" y="14.5" width="3" height="10"/><rect x="17.5" y="14.5" width="3" height="10"/><rect x="23" y="14.5" width="3" height="10"/><rect x="3" y="26" width="26" height="3"/></svg>The Statecraft Blueprint</a>
     <h1>Governance science</h1>
-    <p>Applying the scientific method to how government works. We study how laws are made and written, state what they are supposed to accomplish, and check whether they do.</p>
+    <p>Applying the scientific method to how government works. We study how laws are made and written, how to design them so they serve their goals, and how to check whether they do.</p>
     <p class="note">This is not a government website. It's the public home of a research project.</p>
   </div>
 </header>
 <main class="doc">
 
+  <section id="governance">
+    <h2>What we mean by governance</h2>
+    <p>Three words get used interchangeably, but they mean different things.</p>
+    <div class="labels">
+      <div><b>Government</b><span>The institutions: legislatures, agencies, courts, and the people who work in them.</span></div>
+      <div><b>Politics</b><span>The contest over what those institutions should do: which goals, whose priorities, which values win.</span></div>
+      <div><b>Governance</b><span>The machinery in between: the rules and procedures that turn political decisions into actual results.</span></div>
+    </div>
+    <p>Governance is how a bill reaches the floor, how votes are cast and recorded, how a law is written, how an agency carries it out, and how anyone finds out whether it worked. Politics decides what we want. Governance determines whether we get it.</p>
+    <p>This project stays out of politics on purpose. Reasonable people disagree about goals, and in a democracy those disagreements are settled by voting. What we study is the machinery, and whether it turns decisions into results no matter who wins. The same machinery serves every party that holds power, and when it is badly designed, it fails all of them.</p>
+    <p>The line is not perfectly clean. Some design choices carry political weight of their own. When they do, the aim is to state them openly, so they can be argued about on their merits, rather than bury them in the drafting.</p>
+  </section>
+
   <section id="problem">
     <h2>Why this is needed</h2>
     <p>Aviation, medicine and automobile safety all improved the same way. When something failed, people investigated, traced the failure to a cause, changed the design, and checked whether the change worked. Over decades, that loop made each of them dramatically safer.</p>
-    <p>Government mostly lacks that loop. A law usually spells out what to do, but it rarely says what doing it should accomplish, in terms anyone could check afterward. Without a stated objective, there is nothing to measure a law against. When a law goes wrong, the argument that follows is about who is to blame, not about what in the design failed.</p>
+    <p>Government mostly lacks that loop, at both ends. Before a law passes, it is rarely designed the way engineered systems are: the incentives it creates, and whether its mechanism actually serves its goal, are seldom worked out in advance. After it passes, there is usually nothing to check it against. A law spells out what to do, but it rarely says what doing it should accomplish, in terms anyone could verify later.</p>
+    <p>When a law goes wrong, the argument that follows is about who is to blame, not about what in the design failed.</p>
     <div class="callout">
       <p>Utah's 2025 "100% ID law" is a recent example. Its sponsor later said the way it operated "was never the intent of the bill," but the intent was never written into the law, so no one could tell whether it worked. <a href="/utah/" data-goatcounter-click="home-utah">Read the 60-second version &rarr;</a></p>
     </div>
@@ -54,6 +68,36 @@
       <li><h3>Keep the record</h3><p>Publish results either way, and correct mistakes openly rather than quietly revising.</p></li>
     </ol>
     <p>None of this removes values from government. Deciding what a law should accomplish is a political question, and it should be. The claim is narrower: once the goal is stated, whether a design achieves it can be checked.</p>
+  </section>
+
+  <section id="design">
+    <h2>Designing rules that serve their goals</h2>
+    <p>Measuring results is half the work. The other half is design, done before a law takes effect.</p>
+    <p>Rules shape behavior. People respond to the incentives a rule creates, whoever they are. A well-designed rule points those incentives toward its goal. A poorly designed one rewards something else, and capable, well-meaning people working inside it still produce bad results.</p>
+    <p>Design work asks a few questions before a law passes:</p>
+    <ul class="plain">
+      <li>What is it for? (the mandate)</li>
+      <li>Does the mechanism actually serve that goal? (the architecture)</li>
+      <li>What will the people it touches be rewarded for doing?</li>
+      <li>What else will it do, and what will it cost?</li>
+      <li>How will anyone know whether it worked?</li>
+    </ul>
+    <p>Utah's ID law failed the second question: the mechanism it required, scanning for age, did not serve its goal of stopping sales to people a court had barred. To help with questions like these, the project is building a <a href="https://github.com/The-Statecraft-Blueprint/governance-science/tree/main/patterns" data-goatcounter-click="home-patterns">library of design patterns</a>: recurring design problems, and approaches that have worked for them elsewhere.</p>
+  </section>
+
+  <section id="gda">
+    <h2>The Governance Design Agency</h2>
+    <p>The project's flagship proposal puts both halves, design and checking, into one institution.</p>
+    <p>The Governance Design Agency (GDA) is a proposed institution with a single function: designing the <em>how</em>, the implementation that pursues a goal someone else has set. In one line:</p>
+    <div class="callout"><p><em>You tell us what you want to achieve. We will tell you what would achieve it, what it would cost, and what else it would do.</em></p></div>
+    <ul class="plain">
+      <li>It does not decide what government should do. Setting the goal stays with elected officials.</li>
+      <li>It does not implement, enforce or judge anything.</li>
+      <li>Its designs are recommendations. They carry legal force only where a legislature chooses to adopt them.</li>
+      <li>It keeps the record: what it recommended, what was actually done, and the reasons given, so that when something fails, the failure can be traced to the goal, the design, or how it was carried out.</li>
+    </ul>
+    <p>It is a long-term proposal, not a near-term one. The current specification is published, along with a candidate mandate for the agency itself, written so that whether the GDA achieves its purpose could be checked, and offered for anyone to argue with.</p>
+    <p class="study-link"><a href="https://statecraftblueprint.org/p/a-law-that-nobody-could-check" data-goatcounter-click="home-gda-spec">Read the specification (v4.0, for paid subscribers; summary free) &rarr;</a></p>
   </section>
 
   <section id="work">
@@ -91,11 +135,6 @@
       <div class="study-head"><h3>The coercion loop: recorded votes and party discipline</h3><span class="status use">Paper in circulation</span></div>
       <p>The 1970s reforms put individual members' votes on the House floor, including votes on amendments, on the public record, for good reasons. Combined with party leadership's control over members' careers, the same transparency made every member's position visible to leadership in real time. The paper traces how that combination rewards compliance with leadership over independent judgment, regardless of who is elected.</p>
       <p class="study-link"><a href="https://statecraftblueprint.org/p/every-other-reform-will-fail" data-goatcounter-click="home-coercion-eorwf">Every Other Reform Will Fail &rarr;</a> &middot; <a href="https://statecraftblueprint.org/p/legislative-servitude" data-goatcounter-click="home-coercion">Legislative Servitude &rarr;</a></p>
-    </div>
-
-    <div class="study">
-      <div class="study-head"><h3>How many laws say what they're for?</h3><span class="status early">Planned</span></div>
-      <p>The claim that laws usually spell out procedures without stating an outcome is well supported by examples, but nobody has counted. The plan is to code a sample of enacted statutes for whether they state an objective that could be checked afterward, the same way the executive-order study coded orders. Until that's done, we don't put a percentage on it.</p>
     </div>
 
     <div class="study">
