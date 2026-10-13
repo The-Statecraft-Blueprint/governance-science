@@ -257,3 +257,20 @@ blockquote cite{display:block;font:400 .85rem/1.4 var(--display);font-style:norm
 .readings em.wtp{font-style:italic;font-weight:600}
 .qhero .framing{font:400 1.08rem/1.6 var(--body);color:var(--mist);margin:0 0 1.2rem;max-width:36rem;padding-left:1rem;border-left:3px solid var(--ice)}
 .qhero .framing em{color:var(--chalk)}
+
+/* ---------- home: audience sections ---------- */
+.qhero .aud{max-width:38rem;margin:3rem 0 0}
+.qhero .aud h2{font:700 clamp(1.4rem,4.6vw,1.75rem)/1.2 var(--display);letter-spacing:-.01em;margin:0 0 1.4rem;padding-bottom:.8rem;border-bottom:2px solid rgba(191,219,253,.45)}
+.qhero .aud h3{font:700 1.12rem/1.3 var(--display);color:var(--ice);margin:1.8rem 0 .5rem}
+.qhero .aud h2+h3{margin-top:0}
+.qhero .aud p{font:400 1.08rem/1.6 var(--body);color:var(--mist);margin:0 0 1rem}
+.qhero .aud p a:not(.btn){color:var(--chalk);text-underline-offset:3px}
+.qhero .aud .form-card{margin:0 0 .5rem}
+.qhero .aud .btn-outline{color:var(--chalk)}
+.qhero .aud .qdone .btn-outline{color:var(--accent)}
+.qhero .share-row{display:flex;flex-wrap:wrap;gap:.7rem;margin:0 0 1rem}
+.qhero .aud .small-links{font:500 .92rem/1.6 var(--display);color:var(--ice);margin:0 0 .4rem}
+.qhero .aud .small-links a{color:var(--chalk)}
+.qhero .closing{max-width:38rem;margin:2.6rem 0 0;padding-top:1.4rem;border-top:1px solid rgba(191,219,253,.25)}
+.qhero .closing .sig{font:500 .95rem/1.4 var(--display);color:var(--ice);margin:0 0 .8rem}
+.qhero .closing .more{margin:0}

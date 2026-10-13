@@ -38,7 +38,11 @@
 
     <p class="framing">These aren’t excuses, and they aren’t personal accusations. Humans are imperfect. These are reasons why <em>our</em> government, the Government of the United States of America, can’t function when operated by people, human as they may be.</p>
 
-    <p class="lede">If you work in government and have answers to any of these questions, I’d like to hear them. I imagine you’d like to hear them as well, so I’ll <a href="/answers-for-failures/" data-goatcounter-click="q-answers-lede">post them</a> as I receive them.</p>
+    <section class="aud" id="government">
+      <h2>If you’re a politician, or you work in government…</h2>
+
+      <h3>…and you have answers</h3>
+      <p>I, along with my fellow citizens, would like to hear them. Our government has had more than two centuries to work this out, and the problems have only grown. I imagine other people would like to hear your answers as well, so I’ll <a href="/answers-for-failures/" data-goatcounter-click="q-answers-lede">post them</a> as I receive them.</p>
 
     <form id="answer" class="form-card" action="https://formspree.io/f/mzezgwje" method="POST" novalidate>
       <label for="why">Your answer, to any of the questions</label>
@@ -62,13 +66,33 @@
       <div class="row">
         <a class="btn btn-dark" href="/answers-for-failures/" data-goatcounter-click="q-done-answers">Read other answers</a>
         <a class="btn btn-outline" href="/science/" data-goatcounter-click="q-done-science">See what we’re building</a>
-        <a class="btn btn-outline" href="https://www.statecraftblueprint.org" data-goatcounter-click="q-done-business">Work with The Statecraft Blueprint</a>
+        <a class="btn btn-outline" href="https://www.statecraftblueprint.com" data-goatcounter-click="q-done-business">Work with The Statecraft Blueprint</a>
       </div>
     </div>
 
-    <section class="fixes" id="more">
-      <h2>Have a government failure you’d like to see fixed?</h2>
-      <p>Please <a href="mailto:getinvolved@statecraftblueprint.org?subject=A%20government%20failure%20to%20fix" data-goatcounter-click="q-contact">contact me</a>. I’m in the business of designing fixes for governance mechanisms. I can design fixes for both policy (the legislative text, defining mandate and architecture) and the rules a government operates on. Only a government can provide the execution.</p>
+      <h3>…and you want help designing policy</h3>
+      <p>I design governance mechanisms: the mandate a policy is meant to achieve, and the architecture that achieves it. If you’d like help designing and developing the mandate and architecture for a policy, contact me. I can design architecture built to accomplish the mandate you’re seeking. Only a government can provide the execution.</p>
+      <p><a class="btn btn-light" href="https://www.statecraftblueprint.com" data-goatcounter-click="q-gov-business">Work with The Statecraft Blueprint</a></p>
+    </section>
+
+    <section class="aud" id="citizens">
+      <h2>If you’re a citizen or a business…</h2>
+
+      <h3>…and you want laws that actually work</h3>
+      <p>If you’d like to see effective laws that can address the problems facing our society, send this page to your representatives and tell them you’d like answers. Then share it with others. It’s a numbers game: they can ignore a few of us, but if enough of us ask the question, it becomes undeniable.</p>
+      <div class="share-row">
+        <a class="btn btn-light" href="mailto:?subject=Why%20can%E2%80%99t%20our%20government%20improve%3F&amp;body=I%E2%80%99m%20one%20of%20your%20constituents%2C%20and%20I%E2%80%99d%20like%20an%20answer%20to%20this%20question%3A%20why%20can%E2%80%99t%20we%20the%20people%20design%20a%20government%20that%20continuously%20improves%20itself%3F%0A%0Ahttps%3A%2F%2Fgov.science%2F" data-goatcounter-click="q-write-rep">Write to your representatives</a>
+        <a class="btn btn-outline" href="#" id="share" data-goatcounter-click="q-share">Share this page</a>
+      </div>
+      <p class="small-links">Find your representatives: <a href="https://www.congress.gov/members/find-your-member" data-goatcounter-click="q-find-congress">in Congress</a> · <a href="https://openstates.org/find_your_legislator/" data-goatcounter-click="q-find-state">in your state legislature</a></p>
+      <p class="small-links">Share on: <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgov.science%2F" data-goatcounter-click="q-share-facebook">Facebook</a> · <a href="https://twitter.com/intent/tweet?text=Why%20can%E2%80%99t%20a%20government%20improve%3F&amp;url=https%3A%2F%2Fgov.science%2F" data-goatcounter-click="q-share-x">X</a> · <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgov.science%2F" data-goatcounter-click="q-share-linkedin">LinkedIn</a> · <a href="mailto:?subject=Why%20can%E2%80%99t%20a%20government%20improve%3F&amp;body=https%3A%2F%2Fgov.science%2F" data-goatcounter-click="q-share-email">Email</a></p>
+
+      <h3>…and you want to support the research</h3>
+      <p>If you’d like to support the research and development of solutions to the governance design failures all around us, consider a paid subscription to our research publication, <a href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="q-subscribe">The Statecraft Blueprint</a>.</p>
+      <p><a class="btn btn-outline" href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="q-subscribe-btn">Subscribe to The Statecraft Blueprint</a></p>
+    </section>
+
+    <section class="closing">
       <p class="sig">Jason Edwards, The Statecraft Blueprint</p>
       <p class="more">Next: <a href="/science/" data-goatcounter-click="q-science">Governance science, in full</a>. What it is, how it works, and the research so far.</p>
     </section>
@@ -101,6 +125,21 @@ var FALLBACK_TO = 'getinvolved@statecraftblueprint.org';
         },function(){fail('That didn’t go through. Please try again, or email '+FALLBACK_TO+'.');});
       })
       .catch(function(){fail('That didn’t go through. Please check your connection and try again.');});
+  });
+})();
+</script>
+<div class="toast" id="toast" hidden>Link copied</div>
+<script>
+(function(){
+  var link=document.getElementById('share'), toast=document.getElementById('toast');
+  if(!link) return;
+  link.addEventListener('click',function(e){
+    e.preventDefault();
+    var url='https://gov.science/', text='Why can’t a government improve?';
+    if(navigator.share){navigator.share({title:'gov.science',text:text,url:url}).catch(function(){});return;}
+    var done=function(){toast.hidden=false;setTimeout(function(){toast.hidden=true},1800)};
+    if(navigator.clipboard){navigator.clipboard.writeText(url).then(done,function(){prompt('Copy this link:',url)});}
+    else{prompt('Copy this link:',url);}
   });
 })();
 </script>
