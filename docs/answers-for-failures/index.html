@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Answers for failures | gov.science</title>
+<meta name="description" content="Why can’t our government function when it’s operated by people, human as they may be? Answers from the people, posted as they come in.">
+<link rel="canonical" href="https://gov.science/answers-for-failures/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1a3387">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gov.science/answers-for-failures/">
+<meta property="og:title" content="Answers for failures">
+<meta property="og:description" content="Why can’t our government function when it’s operated by people, human as they may be? Answers from the people, posted as they come in.">
+<meta property="og:image" content="https://gov.science/assets/social-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@governsci">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <a class="mark" href="/" data-goatcounter-click="answers-home" data-goatcounter-title="gov.science (logo)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 3 10v2.5h26V10z"/><rect x="6" y="14.5" width="3" height="10"/><rect x="11.5" y="14.5" width="3" height="10"/><rect x="17.5" y="14.5" width="3" height="10"/><rect x="23" y="14.5" width="3" height="10"/><rect x="3" y="26" width="26" height="3"/></svg>gov.science</a>
+    <h1>Answers for failures</h1>
+    <p>These aren’t excuses, and they aren’t personal accusations. Humans are imperfect. These are reasons why <em>our</em> government, the Government of the United States of America, can’t function when operated by people, human as they may be.</p>
+  </div>
+</header>
+<main class="doc">
+
+  <section id="question">
+    <h2>“Why can’t a government improve?”</h2>
+    <div class="readings light">
+      <p><span class="not">Not</span> “Why can’t <em>our</em> government improve?” in the sense of what is literally wrong with it. That is a very valid question, and we the people deserve an answer.</p>
+      <p><span class="not">Not</span> “Why can’t <em>any</em> government improve?” in the sense of why can’t any of the governments on Earth improve. That too is a very valid question that deserves an answer.</p>
+      <p class="but"><span class="not">But</span> in the “Why can’t <em>we the people</em> of these United States design a government that continuously improves itself?” sense of the phrase.</p>
+    </div>
+    <p>The answers below come from people who answered on the <a href="/" data-goatcounter-click="answers-question">home page</a>. They are posted as they arrive, without names or email addresses.</p>
+  </section>
+
+  <section id="answers">
+    <h2>Answers so far</h2>
+    <ol class="answers" id="list" hidden></ol>
+    <div class="answers-empty" id="empty">
+      <p style="margin:0 0 .9rem">No answers are posted yet. The first ones will appear here as they come in.</p>
+      <a class="btn btn-dark" href="/#answer" data-goatcounter-click="answers-add-empty">Add your answer</a>
+    </div>
+    <noscript><p>This list needs JavaScript to display. The answers are also available as <a href="/answers-for-failures/answers.json">plain data</a>.</p></noscript>
+    <p id="add-more" hidden><a class="btn btn-dark" href="/#answer" data-goatcounter-click="answers-add">Add your answer</a></p>
+  </section>
+
+</main>
+<footer class="foot"><div class="wrap"><span>Not a government website.</span><span>The Statecraft Blueprint</span></div></footer>
+<script>
+/* Answers live in answers.json, newest added at the top:
+   [{"date":"2026-10-14","text":"The answer, as the person wrote it."}, ...] */
+(function(){
+  var list=document.getElementById('list'), empty=document.getElementById('empty'), more=document.getElementById('add-more');
+  fetch('/answers-for-failures/answers.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(items){
+    if(!items||!items.length) return;
+    items.slice().sort(function(a,b){return (b.date||'').localeCompare(a.date||'')}).forEach(function(it){
+      var li=document.createElement('li'), q=document.createElement('blockquote'), m=document.createElement('p');
+      q.textContent=it.text; m.className='meta';
+      if(it.date){var d=new Date(it.date+'T12:00:00'); m.textContent='Received '+d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}
+      li.appendChild(q); if(it.date) li.appendChild(m); list.appendChild(li);
+    });
+    list.hidden=false; empty.hidden=true; more.hidden=false;
+  }).catch(function(){});
+})();
+</script>
+<script data-goatcounter="https://govscience.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
