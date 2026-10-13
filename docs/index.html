@@ -29,11 +29,16 @@
 
     <h1 class="q" aria-label="Why can’t we the people of these United States design a government that continuously improves itself?"><span class="l" aria-hidden="true">Why Can’t</span><span class="l sl" aria-hidden="true"><span class="s">we the people of these United States design</span></span><span class="l" aria-hidden="true">A&nbsp;Government</span><span class="l sl" aria-hidden="true"><span class="s">that continuously</span></span><span class="l k" aria-hidden="true">Improve<span class="s">s itself</span>?</span></h1>
 
-    <p class="lede">Tell me your answer. It can be about what’s wrong today or about why nothing seems to change. I’d like to know, because I’m in the business of designing fixes for governments and laws. Whether you use them is up to you.</p>
-    <p class="sig">Jason Edwards, The Statecraft Blueprint</p>
+    <div class="readings">
+      <p><span class="not">Not</span> why can’t <em>our</em> government improve, in the sense of what is literally wrong with it. That is a very valid question that deserves an answer.</p>
+      <p><span class="not">Not</span> why can’t <em>any</em> government improve, in the sense of any of the governments on Earth. That too is a very valid question that deserves an answer.</p>
+      <p class="but"><span class="not">But</span> why can’t <em>we the people</em> design a government that continuously improves itself?</p>
+    </div>
+
+    <p class="lede">If you have answers to any of these questions, I’d like to hear them.</p>
 
     <form id="answer" class="form-card" action="https://formspree.io/f/mzezgwje" method="POST" novalidate>
-      <label for="why">Why do you think our government can’t improve?</label>
+      <label for="why">Your answer, to any of the questions</label>
       <textarea id="why" name="why_cant_it_improve" rows="4" placeholder="Say it however you like."></textarea>
       <label for="email">Email <span class="opt">(optional, only if you’d like a reply)</span></label>
       <input id="email" name="email" type="email" autocomplete="email" inputmode="email">
@@ -56,7 +61,12 @@
       </div>
     </div>
 
-    <p class="more" id="more">Curious first? <a href="/science/" data-goatcounter-click="q-science">Read how governance science works</a>.</p>
+    <section class="fixes" id="more">
+      <h2>Have a government failure you’d like to see fixed?</h2>
+      <p>Please <a href="mailto:getinvolved@statecraftblueprint.org?subject=A%20government%20failure%20to%20fix" data-goatcounter-click="q-contact">contact me</a>. I’m in the business of designing fixes for governance mechanisms. I can design fixes for both policy (the legislative text, defining mandate and architecture) and the rules a government operates on. Only a government can provide the execution.</p>
+      <p class="sig">Jason Edwards, The Statecraft Blueprint</p>
+      <p class="more">Curious how the work is done? <a href="/science/" data-goatcounter-click="q-science">Read how governance science works</a>.</p>
+    </section>
     <p class="foot-note">Not a government website. The Statecraft Blueprint.</p>
   </div>
 </main>
@@ -66,9 +76,9 @@ var FALLBACK_TO = 'getinvolved@statecraftblueprint.org';
 (function(){
   var form=document.getElementById('answer'), done=document.getElementById('done'),
       err=document.getElementById('form-error'), btn=document.getElementById('send'),
-      more=document.getElementById('more');
+      more=null;
   function count(path){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:path,event:true})}catch(e){}}
-  function showDone(){form.hidden=true;more.hidden=true;done.hidden=false;done.focus();count('q-form-submitted');}
+  function showDone(){form.hidden=true;done.hidden=false;done.focus();count('q-form-submitted');}
   function fail(msg){err.textContent=msg;err.hidden=false;btn.disabled=false;btn.textContent='Send my answer';}
   form.addEventListener('submit',function(e){
     e.preventDefault(); err.hidden=true;
