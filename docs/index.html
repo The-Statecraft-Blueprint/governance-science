@@ -31,24 +31,26 @@
     <h1 class="q" aria-label="Why can’t we the people of these United States design a government that continuously improves itself?"><span class="l" aria-hidden="true">Why Can’t</span><span class="l sl" aria-hidden="true"><span class="s">we the people of these United States design</span></span><span class="l" aria-hidden="true">A&nbsp;Government</span><span class="l sl" aria-hidden="true"><span class="s">that continuously</span></span><span class="l k" aria-hidden="true">Improve<span class="s">s itself</span>?</span></h1>
 
     <div class="readings">
-      <p><span class="not">Not</span> “Why can’t <em>our</em> government improve?” in the sense of what is literally wrong with it. That is a very valid question, and we the people deserve an answer.</p>
+      <p><span class="not">Not</span> “Why can’t <em>our</em> government improve?” in the sense of what is literally wrong with it. That is a very valid question, and <em class="wtp">We the People</em> deserve an answer.</p>
       <p><span class="not">Not</span> “Why can’t <em>any</em> government improve?” in the sense of why can’t any of the governments on Earth improve. That too is a very valid question that deserves an answer.</p>
       <p class="but"><span class="not">But</span> in the “Why can’t <em>we the people</em> of these United States design a government that continuously improves itself?” sense of the phrase.</p>
     </div>
 
-    <p class="lede">If you have answers to any of these questions, I’d like to hear them. I imagine you’d like to hear them as well, so I’ll <a href="/answers-for-failures/" data-goatcounter-click="q-answers-lede">post them</a> as I receive them.</p>
+    <p class="framing">These aren’t excuses, and they aren’t personal accusations. Humans are imperfect. These are reasons why <em>our</em> government, the Government of the United States of America, can’t function when operated by people, human as they may be.</p>
+
+    <p class="lede">If you work in government and have answers to any of these questions, I’d like to hear them. I imagine you’d like to hear them as well, so I’ll <a href="/answers-for-failures/" data-goatcounter-click="q-answers-lede">post them</a> as I receive them.</p>
 
     <form id="answer" class="form-card" action="https://formspree.io/f/mzezgwje" method="POST" novalidate>
       <label for="why">Your answer, to any of the questions</label>
       <textarea id="why" name="why_cant_it_improve" rows="4" placeholder="Say it however you like."></textarea>
-      <label for="email">Email <span class="opt">(optional, only if you’d like a reply)</span></label>
-      <input id="email" name="email" type="email" autocomplete="email" inputmode="email">
+      <label for="email">Your government email address <span class="opt">(ending in .gov or .mil)</span></label>
+      <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
       <label class="check"><input type="checkbox" name="keep_private" value="yes"> Keep my answer private (don’t post it)</label>
       <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="hidden" name="_subject" value="New answer from gov.science: why can't it improve?">
       <p class="form-error" id="form-error" role="alert" hidden></p>
       <button type="submit" class="btn btn-dark" id="send">Send my answer</button>
-      <p class="form-note">I read every answer. Answers are posted without names or email addresses, and your email is only used to reply to you.</p>
+      <p class="form-note">Answers are accepted only from official government email addresses. Each address is confirmed before its answer is posted, and answers are posted without names or email addresses.</p>
     </form>
 
     <div class="form-card qdone" id="done" hidden tabindex="-1">
@@ -60,7 +62,7 @@
       <div class="row">
         <a class="btn btn-dark" href="/answers-for-failures/" data-goatcounter-click="q-done-answers">Read other answers</a>
         <a class="btn btn-outline" href="/science/" data-goatcounter-click="q-done-science">See what we’re building</a>
-        <a class="btn btn-outline" href="https://statecraftblueprint.org/subscribe" data-goatcounter-click="q-done-fund">Help fund the work</a>
+        <a class="btn btn-outline" href="https://www.statecraftblueprint.org" data-goatcounter-click="q-done-business">Work with The Statecraft Blueprint</a>
       </div>
     </div>
 
@@ -86,6 +88,8 @@ var FALLBACK_TO = 'getinvolved@statecraftblueprint.org';
   form.addEventListener('submit',function(e){
     e.preventDefault(); err.hidden=true;
     if(!form.why.value.trim()){fail('Write a few words first. A sentence is plenty.');return;}
+    var em=form.email.value.trim().toLowerCase();
+    if(!/^[^@\s]+@[^@\s]+\.(gov|mil)$/.test(em)){fail('Answers are accepted only from official government email addresses ending in .gov or .mil. If your government uses a different domain, please contact me below.');return;}
     if(form._gotcha.value){showDone();return;}
     btn.disabled=true; btn.textContent='Sending...';
     fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
